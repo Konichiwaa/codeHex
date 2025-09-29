@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Awards - Personal Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+       /* ===== Navbar Custom Colors ===== */
+    .header .logo h1{
+      color: #32608f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .scrolled .header
+ {
+    --background-color: #e7eef1;
+}
+
+/* Default link color */
+#navmenu ul li a {
+  color: #32608f;    /* dark gray */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#navmenu ul li a:hover {
+  color: #5e8dc5;    /* blue when hovered */
+}
+
+/* Active page */
+#navmenu ul li a.active {
+  color:  #32608f;    /* red for active link */
+  font-weight: 500;
+}
+/* Research link */
+#navmenu ul li ul li a[href="research.html"] {
+  color: #fff; 
+}
+
+/* Publications link */
+#navmenu ul li ul li a[href="publications.html"] {
+  color: #fff;  
+}
+
+/* Awards link */
+#navmenu ul li ul li a[href="awards.html"] {
+  color: #fff;   
+}
+/* Experience link */
+#navmenu ul li ul li a[href="experience.html"] {
+  color: #fff;   
+}
+
+/* Leadership link */
+#navmenu ul li ul li a[href="leadership.html"] {
+  color: #fff;   
+}
+/* Optional: hover effect for dropdown items */
+#navmenu ul li ul li a:hover {
+  color: #32608f;  
+}
+
+    /* Awards Section Styles */
+    .awards-section {
+      padding: 100px 0 50px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .awards-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #1a2a3a, #2c5282);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border-left: 6px solid #4299e1;
+      border-right: 6px solid #4299e1;
+    }
+    
+    .awards-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+    }
+    
+    .awards-header h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .awards-subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Tab Navigation */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .tab-btn {
+      padding: 12px 30px;
+      background: #f8f9fa;
+      border: none;
+      color: #2c5282;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .tab-btn:hover {
+      background: #e9ecef;
+      transform: translateY(-2px);
+    }
+
+    .tab-btn.active {
+      background: #2c5282;
+      color: white;
+      box-shadow: 0 5px 15px rgba(44, 82, 130, 0.3);
+    }
+
+    .award-counter {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Tab Content */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .awards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    /* Enhanced Award Card Design */
+    .award-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-top: 6px solid #4299e1;
+      position: relative;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+
+    .award-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(66, 153, 225, 0.05) 0%, rgba(44, 82, 130, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .award-card:hover::before {
+      opacity: 1;
+    }
+
+    .award-card:hover {
+      transform: translateY(-10px) rotateX(5deg);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .award-header {
+      padding: 25px 25px 20px;
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .award-header::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: rgba(255,255,255,0.1);
+      transform: rotate(30deg);
+      transition: all 0.5s ease;
+    }
+
+    .award-card:hover .award-header::after {
+      transform: rotate(30deg) translateX(-100px);
+    }
+
+    .award-type {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .award-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+      position: relative;
+      z-index: 1;
+    }
+
+    .award-project {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .award-organization {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .award-body {
+      padding: 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+      margin-top: -10px;
+      background: white;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .award-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      font-size: 0.95rem;
+      color: #5d6d7e;
+    }
+
+    .award-year {
+      font-weight: 700;
+      color: #2c5282;
+      background: rgba(44, 82, 130, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .award-description {
+      color: #5d6d7e;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex-grow: 1;
+      font-size: 0.95rem;
+    }
+
+    .award-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 18px;
+      border-top: 1px solid #ecf0f1;
+    }
+
+    .award-icon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: #5d6d7e;
+      font-weight: 500;
+    }
+
+    .award-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .award-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      background: #e8f4fc;
+      color: #3498db;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .award-link:hover {
+      background: #3498db;
+      color: white;
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    }
+
+    .award-badge {
+      display: inline-block;
+      background: linear-gradient(120deg, #f39c12, #e67e22);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 12px;
+      box-shadow: 0 3px 6px rgba(243, 156, 18, 0.3);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .scholarship-badge {
+      display: inline-block;
+      background: linear-gradient(120deg, #f39c12, #e67e22);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 12px;
+      box-shadow: 0 3px 6px rgba(155, 89, 182, 0.3);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .innovation-badge {
+      display: inline-block;
+      background: linear-gradient(120deg, #f39c12, #e67e22);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 12px;
+      box-shadow: 0 3px 6px rgba(39, 174, 96, 0.3);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    /* Two-color header styling */
+    .sitename {
+      color: #dde8f8;
+      font-weight: 700;
+    }
+
+    /* Decorative elements */
+    .floating-element {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.1;
+      z-index: 0;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .floating-element:nth-child(1) {
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .floating-element:nth-child(2) {
+      top: 15%;
+      right: 7%;
+      animation-delay: 1s;
+    }
+
+    .floating-element:nth-child(3) {
+      bottom: 20%;
+      left: 8%;
+      animation-delay: 2s;
+    }
+
+    .floating-element:nth-child(4) {
+      bottom: 15%;
+      right: 5%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(5deg);
+      }
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+
+    /* Ribbon for special awards */
+    .ribbon {
+      position: absolute;
+      top: 15px;
+      left: -30px;
+      background: linear-gradient(45deg, #f39c12, #e67e22);
+      color: white;
+      padding: 8px 40px;
+      transform: rotate(-45deg);
+      font-weight: 700;
+      font-size: 0.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+
+    /* Hexagonal award card variant */
+    .award-card.hexagon {
+      clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+      border-top: none;
+      border-radius: 0;
+    }
+
+    .award-card.hexagon .award-header {
+      clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+      padding-top: 40px;
+    }
+
+    .award-card.hexagon .award-body {
+      clip-path: none;
+      margin-top: 0;
+    }
+
+    /* Diamond award card variant */
+    .award-card.diamond {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      border-top: none;
+      border-radius: 0;
+      transform: rotate(45deg);
+      width: 300px;
+      height: 300px;
+      margin: 40px auto;
+    }
+
+    .award-card.diamond .award-header,
+    .award-card.diamond .award-body {
+      transform: rotate(-45deg);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      clip-path: none;
+      margin-top: 0;
+    }
+
+    .award-card.diamond .award-header {
+      padding-bottom: 40px;
+    }
+
+    .award-card.diamond .award-type {
+      transform: rotate(45deg);
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .awards-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .awards-header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .awards-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .tab-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .tab-btn {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .floating-element {
+        display: none;
+      }
+
+      .award-card.diamond {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Awards</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Awards Section -->
+    <section class="awards-section">
+      
+      <div class="container">
+        <header class="awards-header" data-aos="fade-up">
+          <h1>Awards</h1>
+          <p class="awards-subtitle">Excellence in Research, Innovation, and Academic Pursuits</p>
+        </header>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-nav" data-aos="fade-up" data-aos-delay="100">
+          <button class="tab-btn active" data-tab="all">All Awards</button>
+          <button class="tab-btn" data-tab="research">Research Awards</button>
+          <button class="tab-btn" data-tab="innovation">Innovation Awards</button>
+          <button class="tab-btn" data-tab="scholarship">Scholarships</button>
+        </div>
+        
+        <!-- All Awards Tab -->
+        <div class="tab-content active" id="all-tab">
+          <div class="awards-container">
+            
+            <!-- Research Awards -->
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="300">
+              <div class="award-header">
+                <div class="award-type">Research</div>
+                <h3 class="award-title">Best Paper Award</h3>
+                <p class="award-project">Developing a Vision-based Driving Assistance System</p>
+                <p class="award-organization">International Conference of Emerging Technologies in Data Mining and Information Security (IEMIS), India</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2018</span>
+                </div>
+                <p class="award-description">
+                  Recognized for outstanding research in developing a vision-based system that enhances driver safety through computer vision algorithms for obstacle detection, lane marking recognition, and traffic sign identification.
+                </p>
+                <div class="award-badge">🏆 Best Paper Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Research</div>
+                <h3 class="award-title">Best Paper Award</h3>
+                <p class="award-project">An Empirical Robotic Framework for Interacting with Multiple Humans</p>
+                <p class="award-organization">International Conference on Electrical, Information and Communication Technology (EICT), Bangladesh</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2013</span>
+                </div>
+                <p class="award-description">
+                  Awarded for developing a robotic framework that enables natural interaction with multiple humans simultaneously, using multimodal cues for engagement management in human-robot interaction.
+                </p>
+                <div class="award-badge">🏆 Best Paper Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <!-- Innovation Awards -->
+               <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Innovation</div>
+                <h3 class="award-title">2nd Runner up Award</h3>
+                <p class="award-project">Design an Empirical Framework to Estimate the Driver's Attention</p>
+                <p class="award-organization">Civil Service in Development Innovation 2016 at Solve-a-Thon Category</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2016</span>
+                </div>
+                <p class="award-description">
+                  Recognized for innovative approach in developing a framework to estimate driver attention, contributing to road safety through advanced monitoring systems that detect distraction and fatigue in real-time.
+                </p>
+                <div class="innovation-badge">🥉 2nd Runner Up</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Innovation</div>
+                <h3 class="award-title">Champion Award</h3>
+                <p class="award-project">Digital Innovation Fair</p>
+                <p class="award-organization">Division & District Level</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2016</span>
+                </div>
+                <p class="award-description">
+                  Awarded champion in both Division and District levels for outstanding digital innovation, showcasing cutting-edge technological solutions with practical applications in real-world scenarios.
+                </p>
+                <div class="innovation-badge">🥇 Champion Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            
+          
+            
+            <!-- Scholarships -->
+              <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Monbukagakusho Scholarship</h3>
+                <p class="award-project">Doctoral Program at Saitama University, Japan</p>
+                <p class="award-organization">Ministry of Education, Culture, Sports, Science and Technology, Japan</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2009-2012</span>
+                </div>
+                <p class="award-description">
+                  Prestigious Japanese government scholarship awarded to outstanding international students for doctoral research, covering full tuition, living expenses, and research support at Saitama University.
+                </p>
+                
+                <div class="scholarship-badge">🎓 Doctoral Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Korean Government Scholarship</h3>
+                <p class="award-project">PhD Research at Kyung Hee University, South Korea</p>
+                <p class="award-organization">Korean Government for IT International Students</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2008-2009</span>
+                </div>
+                <p class="award-description">
+                  Competitive scholarship awarded to international students pursuing IT-related PhD research, providing comprehensive support for academic and research activities at Kyung Hee University.
+                </p>
+                <div class="scholarship-badge">🎓 PhD Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Research Awards Tab -->
+        <div class="tab-content" id="research-tab">
+          <div class="awards-container">
+            <!-- Research Awards content -->
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="300">
+              <div class="award-header">
+                <div class="award-type">Research</div>
+                <h3 class="award-title">Best Paper Award</h3>
+                <p class="award-project">Developing a Vision-based Driving Assistance System</p>
+                <p class="award-organization">International Conference of Emerging Technologies in Data Mining and Information Security (IEMIS), India</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2018</span>
+                </div>
+                <p class="award-description">
+                  Recognized for outstanding research in developing a vision-based system that enhances driver safety through computer vision algorithms for obstacle detection, lane marking recognition, and traffic sign identification.
+                </p>
+                <div class="award-badge">🏆 Best Paper Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Research</div>
+                <h3 class="award-title">Best Paper Award</h3>
+                <p class="award-project">An Empirical Robotic Framework for Interacting with Multiple Humans</p>
+                <p class="award-organization">International Conference on Electrical, Information and Communication Technology (EICT), Bangladesh</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2013</span>
+                </div>
+                <p class="award-description">
+                  Awarded for developing a robotic framework that enables natural interaction with multiple humans simultaneously, using multimodal cues for engagement management in human-robot interaction.
+                </p>
+                <div class="award-badge">🏆 Best Paper Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Research</div>
+                <h3 class="award-title">Best Paper Presentation Award</h3>
+                <p class="award-project">Controlling Human Attention Through Robot's Gaze Behaviors</p>
+                <p class="award-organization">International Conference on Human System Integration (HSI), Japan</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2011</span>
+                </div>
+                <p class="award-description">
+                  Recognized for excellent presentation of research on how robot gaze behaviors—such as blinking and head movements—can attract and control human attention, enhancing human-robot interaction.
+                </p>
+                <div class="award-badge">🏆 Best Presentation Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Innovation Awards Tab -->
+        <div class="tab-content" id="innovation-tab">
+          <div class="awards-container">
+            <!-- Innovation Awards content -->
+            <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Innovation</div>
+                <h3 class="award-title">2nd Runner up Award</h3>
+                <p class="award-project">Design an Empirical Framework to Estimate the Driver's Attention</p>
+                <p class="award-organization">Civil Service in Development Innovation 2016 at Solve-a-Thon Category</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2016</span>
+                </div>
+                <p class="award-description">
+                  Recognized for innovative approach in developing a framework to estimate driver attention, contributing to road safety through advanced monitoring systems that detect distraction and fatigue in real-time.
+                </p>
+                <div class="innovation-badge">🥉 2nd Runner Up</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Innovation</div>
+                <h3 class="award-title">Champion Award</h3>
+                <p class="award-project">Digital Innovation Fair</p>
+                <p class="award-organization">Division & District Level</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2016</span>
+                </div>
+                <p class="award-description">
+                  Awarded champion in both Division and District levels for outstanding digital innovation, showcasing cutting-edge technological solutions with practical applications in real-world scenarios.
+                </p>
+                <div class="innovation-badge">🥇 Champion Award</div>
+                <div class="award-footer">
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <!-- Scholarships Tab -->
+        <div class="tab-content" id="scholarship-tab">
+          <div class="awards-container">
+            <!-- Scholarships content -->
+           <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Monbukagakusho Scholarship</h3>
+                <p class="award-project">Doctoral Program at Saitama University, Japan</p>
+                <p class="award-organization">Ministry of Education, Culture, Sports, Science and Technology, Japan</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2009-2012</span>
+                </div>
+                <p class="award-description">
+                  Prestigious Japanese government scholarship awarded to outstanding international students for doctoral research, covering full tuition, living expenses, and research support at Saitama University.
+                </p>
+                
+                <div class="scholarship-badge">🎓 Doctoral Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Korean Government Scholarship</h3>
+                <p class="award-project">PhD Research at Kyung Hee University, South Korea</p>
+                <p class="award-organization">Korean Government for IT International Students</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2008-2009</span>
+                </div>
+                <p class="award-description">
+                  Competitive scholarship awarded to international students pursuing IT-related PhD research, providing comprehensive support for academic and research activities at Kyung Hee University.
+                </p>
+                <div class="scholarship-badge">🎓 PhD Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">President Scholarship</h3>
+                <p class="award-project">Supporting Tuition Fees</p>
+                <p class="award-organization">Kyung Hee University, South Korea</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2008-2009</span>
+                </div>
+                <p class="award-description">
+                  University-level scholarship awarded for outstanding academic performance, covering tuition fees during PhD research at Kyung Hee University, South Korea.
+                </p>
+                <div class="scholarship-badge">🎓 Tution Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Higher Study Scholarship</h3>
+                <p class="award-project">Chittagong University of Engineering & Technology</p>
+                <p class="award-organization">CUET, Bangladesh</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">2002-2004</span>
+                </div>
+                <p class="award-description">
+                 Scholarship awarded for higher studies, supporting academic pursuits and research activities at Chittagong University of Engineering & Technology.
+                </p>
+                <div class="scholarship-badge">🎓 Higher Study Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
+              <div class="award-header">
+                <div class="award-type">Scholarship</div>
+                <h3 class="award-title">Technical Scholarship</h3>
+                <p class="award-project">Chittagong University of Engineering & Technology</p>
+                <p class="award-organization">CUET, Bangladesh</p>
+              </div>
+              <div class="award-body">
+                <div class="award-meta">
+                  <span class="award-year">1996-2000</span>
+                </div>
+                <p class="award-description">
+                 Technical scholarship awarded for outstanding performance in engineering studies at Chittagong University of Engineering & Technology, supporting academic excellence throughout the undergraduate program.
+                </p>
+                <div class="scholarship-badge">🎓 Technical Scholarship</div>
+                <div class="award-footer">
+                  <div class="award-icon">
+                    <i class="bi bi-mortarboard"></i> Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
+      <p>Professor, Department of Computer Science & Engineering<br>
+         IEEE Student Branch Chair, CUET</p>
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+        <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+        <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="copyright mt-3">
+        <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
+      </div>
+
+      <div class="credits">
+        Designed & Developed by <a href="#">[CodeHex]</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Tab functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      const awardCount = document.getElementById('award-count');
+      
+      // Award counts for each tab
+      const awardCounts = {
+        'all': document.querySelectorAll('.award-card').length,
+        'research': document.querySelectorAll('.award-card[data-category="research"]').length,
+        'innovation': document.querySelectorAll('.award-card[data-category="innovation"]').length,
+        'scholarship': document.querySelectorAll('.award-card[data-category="scholarship"]').length
+      };
+      
+      // Switch tabs
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Show the corresponding tab content
+          const tabId = this.getAttribute('data-tab') + '-tab';
+          document.getElementById(tabId).classList.add('active');
+          
+          // Update award count
+          awardCount.textContent = awardCounts[this.getAttribute('data-tab')];
+        });
+      });
+      
+      // Initialize award count
+      awardCount.textContent = awardCounts['all'];
+    });
+  </script>
+
+</body>
+
+</html>
