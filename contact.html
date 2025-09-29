@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - Prof. Dr. Mohammed Moshiul Hoque</title>
+  <meta name="description" content="Contact Prof. Dr. Mohammed Moshiul Hoque, Professor of CSE at CUET and Chair of IEEE Bangladesh Section">
+  <meta name="keywords" content="contact, CUET, CSE, professor, IEEE, research">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+     /* ===== Navbar Custom Colors ===== */
+    .header .logo h1{
+      color: #32608f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .scrolled .header
+ {
+    --background-color: #e7eef1;
+}
+
+/* Default link color */
+#navmenu ul li a {
+  color: #32608f;    /* dark gray */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#navmenu ul li a:hover {
+  color: #5e8dc5;    /* blue when hovered */
+}
+
+/* Active page */
+#navmenu ul li a.active {
+  color:  #32608f;    /* red for active link */
+  font-weight: 500;
+}
+/* Research link */
+#navmenu ul li ul li a[href="research.html"] {
+  color: #fff; 
+}
+
+/* Publications link */
+#navmenu ul li ul li a[href="publications.html"] {
+  color: #fff;  
+}
+
+/* Awards link */
+#navmenu ul li ul li a[href="awards.html"] {
+  color: #fff;   
+}
+/* Experience link */
+#navmenu ul li ul li a[href="experience.html"] {
+  color: #fff;   
+}
+
+/* Leadership link */
+#navmenu ul li ul li a[href="leadership.html"] {
+  color: #fff;   
+}
+/* Optional: hover effect for dropdown items */
+#navmenu ul li ul li a:hover {
+  color: #32608f;  
+}
+    /* Contact Section Styles */
+    .contact-section {
+      padding: 100px 0 50px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.03)"/></svg>');
+      background-size: cover;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #1a2a3a, #2c5282);
+      color: white;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      z-index: 1;
+    }
+    
+    .contact-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+    }
+    
+    .contact-header h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .contact-subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 992px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Enhanced Contact Form Styles */
+    .contact-form-container {
+      background: white;
+      border-radius: 20px;
+      padding: 0;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: all 0.4s ease;
+    }
+
+    .contact-form-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(66, 153, 225, 0.05) 0%, rgba(44, 82, 130, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .contact-form-container:hover::before {
+      opacity: 1;
+    }
+
+    .contact-form-container:hover {
+      transform: translateY(-10px) rotateX(5deg);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      padding: 25px 30px;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .form-header::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: rgba(255,255,255,0.1);
+      transform: rotate(30deg);
+      transition: all 0.5s ease;
+    }
+
+    .contact-form-container:hover .form-header::after {
+      transform: rotate(30deg) translateX(-100px);
+    }
+
+    .form-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: #fff;
+    }
+
+    .form-body {
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #2c5282;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .form-label i {
+      color: #4299e1;
+    }
+
+    .form-control {
+      border: 2px solid #e9ecef;
+      border-radius: 10px;
+      padding: 12px 15px;
+      transition: all 0.3s ease;
+      background: #f8f9fa;
+    }
+
+    .form-control:focus {
+      border-color: #4299e1;
+      box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25);
+      background: white;
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .captcha-container {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #e9ecef;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .captcha-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: #4299e1;
+    }
+
+    .captcha-question {
+      font-weight: 600;
+      color: #2c5282;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .captcha-question i {
+      color: #4299e1;
+    }
+
+    .captcha-input {
+      display: flex;
+      gap: 10px;
+    }
+
+    .captcha-input input {
+      flex: 1;
+    }
+
+    .btn-submit {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-submit::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: all 0.5s ease;
+    }
+
+    .btn-submit:hover::before {
+      left: 100%;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(44, 82, 130, 0.4);
+    }
+
+    /* Enhanced Contact Info Styles */
+    .contact-info-container {
+      background: white;
+      border-radius: 20px;
+      padding: 0;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: all 0.4s ease;
+    }
+
+    .contact-info-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(66, 153, 225, 0.05) 0%, rgba(44, 82, 130, 0.1) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .contact-info-container:hover::before {
+      opacity: 1;
+    }
+
+    .contact-info-container:hover {
+      transform: translateY(-10px) rotateX(5deg);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      padding: 25px 30px;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .info-header::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: rgba(255,255,255,0.1);
+      transform: rotate(30deg);
+      transition: all 0.5s ease;
+    }
+
+    .contact-info-container:hover .info-header::after {
+      transform: rotate(30deg) translateX(-100px);
+    }
+
+    .info-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: #fff;
+    }
+
+    .info-body {
+      padding: 30px;
+    }
+
+    .info-section {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .section-title {
+      color: #2c5282;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e9ecef;
+    }
+
+    .section-title i {
+      color: #4299e1;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background: #f8f9fa;
+    }
+
+    .contact-item:hover {
+      background: #e8f4fc;
+      transform: translateX(5px);
+    }
+
+    .contact-icon {
+      background: #e8f4fc;
+      color: #3498db;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover .contact-icon {
+      background: #3498db;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .contact-text {
+      color: #5d6d7e;
+      flex: 1;
+    }
+
+    .contact-text strong {
+      color: #2c5282;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .contact-text a {
+      color: #5d6d7e;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-text a:hover {
+      color: #3498db;
+    }
+
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .profile-item {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e9ecef;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #4299e1;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-item:hover::before {
+      transform: scaleX(1);
+    }
+
+    .profile-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-color: #4299e1;
+    }
+
+    .profile-icon {
+      font-size: 1.8rem;
+      color: #4299e1;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .profile-item:hover .profile-icon {
+      transform: scale(1.2);
+      color: #2c5282;
+    }
+
+    .profile-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2c5282;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .social-item {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e9ecef;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .social-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #4299e1;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .social-item:hover::before {
+      transform: scaleX(1);
+    }
+
+    .social-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-color: #4299e1;
+    }
+
+    .social-icon {
+      font-size: 1.8rem;
+      color: #4299e1;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .social-item:hover .social-icon {
+      transform: scale(1.2);
+      color: #2c5282;
+    }
+
+    .social-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2c5282;
+    }
+
+    /* Map Section */
+    .map-section {
+      margin-top: 50px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 35px 55px rgba(180, 194, 211, 0.9);
+      position: relative;
+      z-index: 1;
+    }
+
+    .map-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      
+
+    }
+
+    .map-header h3 {
+      margin: 0;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .map-container {
+      height: 420px;
+      background: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5d6d7e;
+      font-weight: 600;
+      position: relative;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .profiles-grid,
+      .social-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      }
+      
+      .contact-header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .contact-subtitle {
+        font-size: 1.1rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Contact</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Contact Section -->
+    <section class="contact-section">
+      
+      <div class="container">
+        <header class="contact-header" data-aos="fade-up">
+          <h1>Get In Touch</h1>
+          <p class="contact-subtitle">Feel free to reach out for collaborations, research inquiries, or any professional communication</p>
+        </header>
+        
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form-container" data-aos="fade-right" data-aos-delay="100">
+            <div class="form-header">
+              <h3 class="form-title">Send a Message</h3>
+            </div>
+            <div class="form-body">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label"><i class="bi bi-person"></i> Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label"><i class="bi bi-envelope"></i> Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label"><i class="bi bi-chat-text"></i> Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Enter the subject of your message" required>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label"><i class="bi bi-pencil"></i> Message</label>
+                  <textarea class="form-control" id="message" placeholder="Enter your message here..." required></textarea>
+                </div>
+                <div class="captcha-container">
+                  <div class="captcha-question"><i class="bi bi-shield-check"></i> What is 7 + 5? (Anti-spam verification)</div>
+                  <div class="captcha-input">
+                    <input type="text" class="form-control" id="captcha" placeholder="Enter the result" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+            <!-- Map Section -->
+       <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+  <div class="map-header">
+    <h3><i class="bi bi-geo-alt"></i>  Location</h3>
+  </div>
+  <div class="map-container">
+    <!-- Google Map Embed -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.391566625155!2d91.96925871498242!3d22.463154985237576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd6a227ed6763%3A0x3a72683b0e6f6e8!2sChittagong%20University%20of%20Engineering%20%26%20Technology%20(CUET)!5e0!3m2!1sen!2sbd!4v1696192732690!5m2!1sen!2sbd" 
+      width="100%" 
+      height="420" 
+     
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+          </div>
+         
+          <!-- Contact Information -->
+          <div class="contact-info-container" data-aos="fade-left" data-aos-delay="100">
+            <div class="info-header">
+              <h3 class="info-title">Contact Information</h3>
+            </div>
+            <div class="info-body">
+              <!-- Direct Contact -->
+              <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-geo-alt"></i> Direct Contact Information</h4>
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="bi bi-building"></i>
+                    </div>
+                    <div class="contact-text">
+                      <strong>Department & Address</strong>
+                      <span>Dept. of CSE, CUET</span>
+                      <span>Chittagong-4349, Bangladesh</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                      <strong>Email Addresses</strong>
+                      <a href="mailto:mmoshiulh@gmail.com">mmoshiulh@gmail.com</a>
+                      <a href="mailto:moshiulh@yahoo.com">moshiulh@yahoo.com</a>
+                      <a href="mailto:moshiul_240@cuet.ac.bd">moshiul_240@cuet.ac.bd</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="contact-text">
+                      <strong>Phone Numbers</strong>
+                      <span>03025-56121-24 (Ext. 2323)</span>
+                      <a href="tel:8801716133019">Mobile: 88-01716-133019</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Research Profiles -->
+              <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-journal-text"></i> Research Profiles</h4>
+                <div class="profiles-grid">
+                  <a href="https://scholar.google.com/citations?hl=en&user=srYxYhcAAAAJ" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-google"></i>
+                    </div>
+                    <div class="profile-name">Google Scholar</div>
+                  </a>
+                  <a href="https://www.researchgate.net/profile/Moshiul-Hoque" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="profile-name">ResearchGate</div>
+                  </a>
+                  <a href="https://orcid.org/0000-0001-8806-708X" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-person-badge"></i>
+                    </div>
+                    <div class="profile-name">ORCID</div>
+                  </a>
+                  <a href="https://dblp.org/pid/14/10110" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="profile-name">DBLP</div>
+                  </a>
+                  <a href="https://openreview.net/profile?id=~Mohammed_Moshiul_Hoque1" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-eye"></i>
+                    </div>
+                    <div class="profile-name">OpenReview</div>
+                  </a>
+                  <a href="https://sciprofiles.com/profile/1191759" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                    <div class="profile-name">SciProfiles</div>
+                  </a>
+                  <a href="https://cuet.academia.edu/MoshiulHoque" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-building"></i>
+                    </div>
+                    <div class="profile-name">Academia.edu</div>
+                  </a>
+                  <a href="https://www.scilit.com/scholars/13138583" class="profile-item" target="_blank">
+                    <div class="profile-icon">
+                      <i class="bi bi-search"></i>
+                    </div>
+                    <div class="profile-name">Scilit</div>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Social Media -->
+              <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-share"></i> Social Media</h4>
+                <div class="social-grid">
+                  <a href="https://www.facebook.com/mohammed.m.hoque.92/" class="social-item" target="_blank">
+                    <div class="social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-name">Facebook (Personal)</div>
+                  </a>
+                  <a href="https://www.facebook.com/cuetnlplab/" class="social-item" target="_blank">
+                    <div class="social-icon">
+                      <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-name">CUET NLP Lab</div>
+                  </a>
+                  <a href="https://www.researchgate.net/lab/CUET-NLP-Lab-Moshiul-Hoque" class="social-item" target="_blank">
+                    <div class="social-icon">
+                      <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="social-name">CUET NLP Lab (RG)</div>
+                  </a>
+                  <a href="https://www.cuet.ac.bd/members/500" class="social-item" target="_blank">
+                    <div class="social-icon">
+                      <i class="bi bi-globe"></i>
+                    </div>
+                    <div class="social-name">CUET Profile</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
+      <p>Professor, Department of Computer Science & Engineering<br>
+         IEEE Student Branch Chair, CUET</p>
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+        <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+        <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="copyright mt-3">
+        <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
+      </div>
+
+      <div class="credits">
+        Designed & Developed by <a href="#">[CodeHex]</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Simple form validation and CAPTCHA check
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get CAPTCHA value
+      const captchaInput = document.getElementById('captcha').value;
+      
+      // Simple CAPTCHA check (7 + 5 = 12)
+      if (captchaInput !== '12') {
+        alert('Please enter the correct CAPTCHA answer.');
+        return;
+      }
+      
+      // If CAPTCHA is correct, show success message
+      alert('Thank you for your message! It has been sent successfully.');
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+
+</body>
+
+</html>
