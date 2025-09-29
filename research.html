@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Research - Personal Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* ===== Navbar Custom Colors ===== */
+    .header .logo h1{
+      color: #32608f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .scrolled .header
+ {
+    --background-color: #e7eef1;
+}
+
+/* Default link color */
+#navmenu ul li a {
+  color: #32608f;    /* dark gray */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#navmenu ul li a:hover {
+  color: #5e8dc5;    /* blue when hovered */
+}
+
+/* Active page */
+#navmenu ul li a.active {
+  color:  #32608f;    /* red for active link */
+  font-weight: 500;
+}
+/* Research link */
+#navmenu ul li ul li a[href="research.html"] {
+  color: #fff; 
+}
+
+/* Publications link */
+#navmenu ul li ul li a[href="publications.html"] {
+  color: #fff;  
+}
+
+/* Awards link */
+#navmenu ul li ul li a[href="awards.html"] {
+  color: #fff;   
+}
+/* Experience link */
+#navmenu ul li ul li a[href="experience.html"] {
+  color: #fff;   
+}
+
+/* Leadership link */
+#navmenu ul li ul li a[href="leadership.html"] {
+  color: #fff;   
+}
+/* Optional: hover effect for dropdown items */
+#navmenu ul li ul li a:hover {
+  color: #32608f;  
+}
+
+
+    /* Research Section Styles */
+    .research-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+    }
+
+    .research-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #1a2a3a, #2c5282);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border-left: 6px solid #4299e1;
+      border-right: 6px solid #4299e1;
+    }
+    
+    .research-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+    }
+    
+    .research-header h1 {
+      font-size: 2.8rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .research-subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #2c5282;
+      display: inline-block;
+    }
+
+    .research-cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .research-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .research-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+      padding: 25px 25px 15px;
+      text-align: center;
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+    }
+
+    .card-logo {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .card-body {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-description {
+      color: #5d6d7e;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .card-technologies {
+      margin-top: auto;
+      padding-top: 15px;
+      border-top: 1px solid #ecf0f1;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      background: #e8f4fc;
+      color: #3498db;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+
+    /* Specific card colors */
+    .nlp-card .card-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+    }
+
+    .ai-card .card-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+    }
+
+    .hri-card .card-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+    }
+
+    .speech-card .card-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+    }
+
+    .ict-card .card-header {
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .research-cards-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .research-header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .research-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Mar 05 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Rese<span>arch</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Research Section -->
+    <section class="research-section">
+      <div class="container">
+        <header class="research-header" data-aos="fade-up">
+          <h1>Research Areas</h1>
+        
+        <div class="research-cards-container">
+          <!-- NLP Card -->
+          <div class="research-card nlp-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-language"></i>
+              </div>
+              <h2 class="card-title">Natural Language Processing</h2>
+            </div>
+            
+          </div>
+          
+          <!-- HRI & HCI Card -->
+          <div class="research-card hri-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-users"></i>
+              </div>
+              <h2 class="card-title">Human Robot & Computer Interaction</h2>
+            </div>
+          </div>
+          
+          <!-- AI Card -->
+          <div class="research-card ai-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h2 class="card-title">Artificial <br>Intelligence</h2>
+            </div>
+          </div>
+
+          <!-- ML Card -->
+          <div class="research-card ai-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h2 class="card-title">Machine <br>Learning</h2>
+            </div>
+          </div>
+          
+          <!-- Speech & Image Processing Card -->
+          <div class="research-card speech-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-microphone-alt"></i>
+              </div>
+              <h2 class="card-title">Speech & Image Processing</h2>
+            </div>
+          </div>
+          
+          <!-- ICT4D Card -->
+          <div class="research-card ict-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-header">
+              <div class="card-logo">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h2 class="card-title">ICT for <br>Development</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
+      <p>Professor, Department of Computer Science & Engineering<br>
+         IEEE Student Branch Chair, CUET</p>
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+        <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+        <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="copyright mt-3">
+        <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
+      </div>
+
+      <div class="credits">
+        Designed & Developed by <a href="#">[CodeHex]</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
