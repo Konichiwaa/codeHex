@@ -28,19 +28,44 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-       /* ===== Navbar Custom Colors ===== */
-    .header .logo h1{
-      color: #32608f;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .scrolled .header
- {
-    --background-color: #e7eef1;
-}
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {   
+            background: linear-gradient(135deg, #f0f4f8 0%, #e1e8f0 100%);
+            color: #333; 
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #1a2a3a, #2c5282);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: visible;
+            border-left: 6px solid #4299e1;
+            border-right: 6px solid #4299e1;
+        }
+        
 
-/* Default link color */
+/* nav */
 #navmenu ul li a {
-  color: #32608f;    
+  color: #ffff;    
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -52,7 +77,7 @@
 
 /* Active page */
 #navmenu ul li a.active {
-  color:  #32608f;    
+  color:  #ffff;    
   font-weight: 500;
 }
 /* Research link */
@@ -96,7 +121,7 @@
       text-align: center;
       margin-bottom: 40px;
       padding: 40px 20px;
-      background: linear-gradient(120deg, #1a2a3a, #2c5282);
+      background: linear-gradient(120deg,  #1a2a3a, #2c5282);
       color: white;
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -213,7 +238,7 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      border-top: 6px solid #4299e1;
+      border-top: 6px solid #76b7ed;
       position: relative;
       transform-style: preserve-3d;
       perspective: 1000px;
@@ -243,7 +268,7 @@
 
     .award-header {
       padding: 25px 25px 20px;
-      background: linear-gradient(120deg, #2c5282, #4299e1);
+      background: linear-gradient(120deg,#1a2a3a, #2c5282);
       color: white;
       position: relative;
       overflow: hidden;
@@ -270,13 +295,13 @@
       position: absolute;
       top: 20px;
       right: 20px;
-      background: rgba(255, 255, 255, 0.2);
+      background: linear-gradient(120deg, #1a2a3a, #2c5282);
       padding: 6px 15px;
       border-radius: 20px;
       font-size: 0.8rem;
       font-weight: 600;
       backdrop-filter: blur(5px);
-      border: 1px solid rgba(255,255,255,0.3);
+      border: 3px solid #2c5282;
     }
 
     .award-title {
@@ -312,7 +337,7 @@
       position: relative;
       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
       margin-top: -10px;
-      background: white;
+      background: #ffffff;
       border-radius: 0 0 20px 20px;
     }
 
@@ -321,7 +346,7 @@
       justify-content: space-between;
       margin-bottom: 18px;
       font-size: 0.95rem;
-      color: #5d6d7e;
+      color: #ffffff;
     }
 
     .award-year {
@@ -385,7 +410,7 @@
 
     .award-badge {
       display: inline-block;
-      background: linear-gradient(120deg, #f39c12, #e67e22);
+      background: linear-gradient(120deg, #f35512, #e26a00);
       color: white;
       padding: 8px 16px;
       border-radius: 20px;
@@ -398,7 +423,7 @@
 
     .scholarship-badge {
       display: inline-block;
-      background: linear-gradient(120deg, #f39c12, #e67e22);
+      background: linear-gradient(120deg, #70a6b0, #103b41);
       color: white;
       padding: 8px 16px;
       border-radius: 20px;
@@ -471,7 +496,6 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <!-- <li><a href="resume.html">Resume</a></li> -->
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                <li><a href="experience.html">Experience</a></li>
@@ -501,10 +525,10 @@
       <div class="container">
         <header class="awards-header" data-aos="fade-up">
           <h1>Awards</h1>
-          <p class="awards-subtitle">Excellence in Research, Innovation, and Academic Pursuits</p>
         </header>
         
         <!-- Tab Navigation -->
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
         <div class="tab-nav" data-aos="fade-up" data-aos-delay="100">
           <button class="tab-btn active" data-tab="all">All Awards</button>
           <button class="tab-btn" data-tab="research">Research Awards</button>
@@ -519,7 +543,7 @@
             <!-- Research Awards -->
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="300">
               <div class="award-header">
-                <div class="award-type">Research</div>
+                
                 <h3 class="award-title">Best Paper Award</h3>
                 <p class="award-project">Developing a Vision-based Driving Assistance System</p>
                 <p class="award-organization">International Conference of Emerging Technologies in Data Mining and Information Security (IEMIS), India</p>
@@ -527,6 +551,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2018</span>
+                  <div class="award-type">Research</div>
                 </div>
                 <p class="award-description">
                   Recognized for outstanding research in developing a vision-based system that enhances driver safety through computer vision algorithms for obstacle detection, lane marking recognition, and traffic sign identification.
@@ -539,7 +564,7 @@
             
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Research</div>
+               
                 <h3 class="award-title">Best Paper Award</h3>
                 <p class="award-project">An Empirical Robotic Framework for Interacting with Multiple Humans</p>
                 <p class="award-organization">International Conference on Electrical, Information and Communication Technology (EICT), Bangladesh</p>
@@ -547,6 +572,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2013</span>
+                  <div class="award-type">Research</div>
                 </div>
                 <p class="award-description">
                   Awarded for developing a robotic framework that enables natural interaction with multiple humans simultaneously, using multimodal cues for engagement management in human-robot interaction.
@@ -562,14 +588,14 @@
             <!-- Innovation Awards -->
                <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Innovation</div>
-                <h3 class="award-title">2nd Runner up Award</h3>
+             <h3 class="award-title">2nd Runner up Award</h3>
                 <p class="award-project">Design an Empirical Framework to Estimate the Driver's Attention</p>
                 <p class="award-organization">Civil Service in Development Innovation 2016 at Solve-a-Thon Category</p>
               </div>
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2016</span>
+                  <div class="award-type">Innovation</div>
                 </div>
                 <p class="award-description">
                   Recognized for innovative approach in developing a framework to estimate driver attention, contributing to road safety through advanced monitoring systems that detect distraction and fatigue in real-time.
@@ -581,14 +607,14 @@
             </div>
              <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Innovation</div>
-                <h3 class="award-title">Champion Award</h3>
+             <h3 class="award-title">Champion Award</h3>
                 <p class="award-project">Digital Innovation Fair</p>
                 <p class="award-organization">Division & District Level</p>
               </div>
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2016</span>
+                  <div class="award-type">Innovation</div>
                 </div>
                 <p class="award-description">
                   Awarded champion in both Division and District levels for outstanding digital innovation, showcasing cutting-edge technological solutions with practical applications in real-world scenarios.
@@ -604,7 +630,7 @@
             <!-- Scholarships -->
               <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Scholarship</div>
+                
                 <h3 class="award-title">Monbukagakusho Scholarship</h3>
                 <p class="award-project">Doctoral Program at Saitama University, Japan</p>
                 <p class="award-organization">Ministry of Education, Culture, Sports, Science and Technology, Japan</p>
@@ -612,6 +638,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2009-2012</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                   Prestigious Japanese government scholarship awarded to outstanding international students for doctoral research, covering full tuition, living expenses, and research support at Saitama University.
@@ -627,7 +654,7 @@
             </div>
             <div class="award-card" data-category="scholarship" data-aos="fade-up" data-aos-delay="550">
               <div class="award-header">
-                <div class="award-type">Scholarship</div>
+
                 <h3 class="award-title">Korean Government Scholarship</h3>
                 <p class="award-project">PhD Research at Kyung Hee University, South Korea</p>
                 <p class="award-organization">Korean Government for IT International Students</p>
@@ -635,6 +662,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2008-2009</span>
+                   <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                   Competitive scholarship awarded to international students pursuing IT-related PhD research, providing comprehensive support for academic and research activities at Kyung Hee University.
@@ -657,14 +685,14 @@
             <!-- Research Awards content -->
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="300">
               <div class="award-header">
-                <div class="award-type">Research</div>
-                <h3 class="award-title">Best Paper Award</h3>
+               <h3 class="award-title">Best Paper Award</h3>
                 <p class="award-project">Developing a Vision-based Driving Assistance System</p>
                 <p class="award-organization">International Conference of Emerging Technologies in Data Mining and Information Security (IEMIS), India</p>
               </div>
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2018</span>
+                  <div class="award-type">Research</div>
                 </div>
                 <p class="award-description">
                   Recognized for outstanding research in developing a vision-based system that enhances driver safety through computer vision algorithms for obstacle detection, lane marking recognition, and traffic sign identification.
@@ -677,14 +705,14 @@
             
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Research</div>
-                <h3 class="award-title">Best Paper Award</h3>
+              <h3 class="award-title">Best Paper Award</h3>
                 <p class="award-project">An Empirical Robotic Framework for Interacting with Multiple Humans</p>
                 <p class="award-organization">International Conference on Electrical, Information and Communication Technology (EICT), Bangladesh</p>
               </div>
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2013</span>
+                  <div class="award-type">Research</div>
                 </div>
                 <p class="award-description">
                   Awarded for developing a robotic framework that enables natural interaction with multiple humans simultaneously, using multimodal cues for engagement management in human-robot interaction.
@@ -696,7 +724,6 @@
             </div>
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Research</div>
                 <h3 class="award-title">Best Paper Presentation Award</h3>
                 <p class="award-project">Controlling Human Attention Through Robot's Gaze Behaviors</p>
                 <p class="award-organization">International Conference on Human System Integration (HSI), Japan</p>
@@ -704,6 +731,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2011</span>
+                 <div class="award-type">Research</div>
                 </div>
                 <p class="award-description">
                   Recognized for excellent presentation of research on how robot gaze behaviors—such as blinking and head movements—can attract and control human attention, enhancing human-robot interaction.
@@ -723,7 +751,6 @@
             <!-- Innovation Awards content -->
             <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Innovation</div>
                 <h3 class="award-title">2nd Runner up Award</h3>
                 <p class="award-project">Design an Empirical Framework to Estimate the Driver's Attention</p>
                 <p class="award-organization">Civil Service in Development Innovation 2016 at Solve-a-Thon Category</p>
@@ -731,6 +758,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2016</span>
+                  <div class="award-type">Innovation</div>
                 </div>
                 <p class="award-description">
                   Recognized for innovative approach in developing a framework to estimate driver attention, contributing to road safety through advanced monitoring systems that detect distraction and fatigue in real-time.
@@ -742,14 +770,14 @@
             </div>
              <div class="award-card" data-category="research" data-aos="fade-up" data-aos-delay="350">
               <div class="award-header">
-                <div class="award-type">Innovation</div>
-                <h3 class="award-title">Champion Award</h3>
+              <h3 class="award-title">Champion Award</h3>
                 <p class="award-project">Digital Innovation Fair</p>
                 <p class="award-organization">Division & District Level</p>
               </div>
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2016</span>
+                  <div class="award-type">Innovation</div>
                 </div>
                 <p class="award-description">
                   Awarded champion in both Division and District levels for outstanding digital innovation, showcasing cutting-edge technological solutions with practical applications in real-world scenarios.
@@ -775,6 +803,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2009-2012</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                   Prestigious Japanese government scholarship awarded to outstanding international students for doctoral research, covering full tuition, living expenses, and research support at Saitama University.
@@ -798,6 +827,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2008-2009</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                   Competitive scholarship awarded to international students pursuing IT-related PhD research, providing comprehensive support for academic and research activities at Kyung Hee University.
@@ -820,6 +850,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2008-2009</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                   University-level scholarship awarded for outstanding academic performance, covering tuition fees during PhD research at Kyung Hee University, South Korea.
@@ -842,6 +873,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">2002-2004</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                  Scholarship awarded for higher studies, supporting academic pursuits and research activities at Chittagong University of Engineering & Technology.
@@ -864,6 +896,7 @@
               <div class="award-body">
                 <div class="award-meta">
                   <span class="award-year">1996-2000</span>
+                  <div class="award-type">Scholarship</div>
                 </div>
                 <p class="award-description">
                  Technical scholarship awarded for outstanding performance in engineering studies at Chittagong University of Engineering & Technology, supporting academic excellence throughout the undergraduate program.
@@ -882,29 +915,32 @@
       </div>
     </section>
   </main>
+<!-- Footer-->
+    <footer id="footer" class="footer dark-background">
+  <div class="container text-center">
+    <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
+    <h3 class="sitename">social-links</h3>
+    
+       
+    <div class="social-links d-flex justify-content-center">
+      <div class="social-links d-flex justify-content-center"></div>    
 
-   <footer id="footer" class="footer dark-background">
-    <div class="container text-center">
-      <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
-      <p>Professor, Department of Computer Science & Engineering<br>
-         IEEE Student Branch Chair, CUET</p>
-      
-      <div class="social-links d-flex justify-content-center">
-        <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-        <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
-        <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
-        <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
-      </div>
+           <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
 
-      <div class="copyright mt-3">
-        <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
-      </div>
+          <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+          <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+          <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+        </div>
 
-      <div class="credits">
-        Designed & Developed by <a href="#">[CodeHex]</a>
-      </div>
+    <div class="copyright mt-3">
+      <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>. All Rights Reserved</span>
     </div>
-  </footer>
+
+    <div class="credits">
+      Designed & Developed by <a href="#">[CodeHex]</a>
+    </div>
+  </div>
+</footer>
 
 
   <!-- Scroll Top -->
