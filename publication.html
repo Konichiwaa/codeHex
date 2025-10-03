@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Publications - Personal Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+       /* ===== Navbar Custom Colors ===== */
+    .header .logo h1{
+      color: #32608f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .scrolled .header
+ {
+    --background-color: #e7eef1;
+}
+
+/* Default link color */
+#navmenu ul li a {
+  color: #32608f;    
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+#navmenu ul li a:hover {
+  color: #5e8dc5;    
+}
+
+/* Active page */
+#navmenu ul li a.active {
+  color:  #32608f;    
+  font-weight: 500;
+}
+/* Research link */
+#navmenu ul li ul li a[href="research.html"] {
+  color: #fff; 
+}
+
+/* Publications link */
+#navmenu ul li ul li a[href="publications.html"] {
+  color: #fff;  
+}
+
+/* Awards link */
+#navmenu ul li ul li a[href="awards.html"] {
+  color: #fff;   
+}
+/* Experience link */
+#navmenu ul li ul li a[href="experience.html"] {
+  color: #fff;   
+}
+
+/* Leadership link */
+#navmenu ul li ul li a[href="leadership.html"] {
+  color: #fff;   
+}
+/* Optional: hover effect for dropdown items */
+#navmenu ul li ul li a:hover {
+  color: #32608f;  
+}
+
+    /* Publications Section Styles */
+    .publications-section {
+      padding: 100px 0 50px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+    }
+
+    .publications-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #1a2a3a, #2c5282);
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border-left: 6px solid #4299e1;
+      border-right: 6px solid #4299e1;
+    }
+    
+    .publications-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+    }
+    
+    .publications-header h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .publications-subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Tab Navigation */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .tab-btn {
+      padding: 12px 30px;
+      background: #f8f9fa;
+      border: none;
+      color: #2c5282;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .tab-btn:hover {
+      background: #e9ecef;
+      transform: translateY(-2px);
+    }
+
+    .tab-btn.active {
+      background: #2c5282;
+      color: white;
+      box-shadow: 0 5px 15px rgba(44, 82, 130, 0.3);
+    }
+
+    .publication-counter {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Tab Content */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .publications-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .publication-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-top: 4px solid #4299e1;
+    }
+
+    .publication-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .publication-header {
+      padding: 20px 20px 15px;
+      background: linear-gradient(120deg, #2c5282, #4299e1);
+      color: white;
+      position: relative;
+    }
+
+    .publication-type {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .publication-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .publication-authors {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 5px;
+    }
+
+    .publication-venue {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      font-style: italic;
+    }
+
+    .publication-body {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .publication-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+      color: #5d6d7e;
+    }
+
+    .publication-year {
+      font-weight: 600;
+      color: #2c5282;
+    }
+
+    .publication-abstract {
+      color: #5d6d7e;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      flex-grow: 1;
+      font-size: 0.9rem;
+    }
+
+    .publication-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 1px solid #ecf0f1;
+    }
+
+    .citation-count {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9rem;
+      color: #5d6d7e;
+    }
+
+    .publication-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .publication-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: #e8f4fc;
+      color: #3498db;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .publication-link:hover {
+      background: #3498db;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .award-badge {
+      display: inline-block;
+      background: linear-gradient(120deg, #f39c12, #e67e22);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    /* Two-color header styling */
+    .sitename {
+      color: #dde8f8;
+      font-weight: 700;
+    }
+    
+    
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .publications-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .publications-header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .publications-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .tab-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .tab-btn {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Publications</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Publications Section -->
+    <section class="publications-section">
+      <div class="container">
+        <header class="publications-header" data-aos="fade-up">
+          <h1>Publications</h1>
+          <p class="publications-subtitle">A comprehensive collection of research publications in various domains</p>
+        </header>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-nav" data-aos="fade-up" data-aos-delay="100">
+          <button class="tab-btn active" data-tab="all">All Publications</button>
+          <button class="tab-btn" data-tab="journal">Journal Papers</button>
+          <button class="tab-btn" data-tab="conference">Conference Papers</button>
+          <button class="tab-btn" data-tab="book">Book Chapters</button>
+        </div>
+        
+       <!-- All Publications Tab -->
+        <div class="tab-content active" id="all-tab">
+          <div class="publications-container">
+            
+      
+            <!-- Journal Papers -->
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="300">
+              <div class="publication-header">
+          
+                <h3 class="publication-title">A Text-Based Chat System Embodied with an Expressive Agent</h3>
+                <p class="publication-authors">L. Alam, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Human-Computer Interaction</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2017</span>
+
+                </div>
+                <p class="publication-abstract">
+                  This paper presents a text-based chat system enhanced with an expressive agent that improves user engagement through non-verbal cues and emotional expressions.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 24 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1155/2017/8962762" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="350">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">An Empirical Robotic Framework for Initiating Interaction with the Target Human in Multiparty Settings</h3>
+                <p class="publication-authors">M. M. Hoque et al.</p>
+                <p class="publication-venue">Journal of Circuits, Systems & Computers</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2015</span>
+                </div>
+                <p class="publication-abstract">
+                  An empirical framework for robots to initiate interaction with specific humans in multiparty settings, using gaze and attention mechanisms for natural human-robot interaction.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 31 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126615400034" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+ 
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+            
+                <h3 class="publication-title">Fundamental Frequency Extraction of Noisy Speech Signals</h3>
+                <p class="publication-authors">M. A. F. M. R. Hasan, R. Yasmin, D. Das, M. M. Hoque, M. I. Pramanik, M. S. Rahman</p>
+                <p class="publication-venue">Rajshahi University Journal of Science & Engineering, Vol. 43</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2015</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 This paper proposes a new correlation-based method using a center-clipped autocorrelation weighted by inverse YIN for robust pitch estimation in noisy speech.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 1 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/288992842_Fundamental_Frequency_Extraction_of_Noisy_Speech_Signals" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Hybrid Spectrum Sharing with Cooperative Secondary User Selection in Cognitive Radio Networks</h3>
+                <p class="publication-authors">M. F. Kader, Assaduzzaman, M. M. Hoque</p>
+                <p class="publication-venue">KSII Transactions on Internet and Information Systems (TIIS)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a hybrid cooperative spectrum sharing protocol combining interweave and underlay modes, with relay selection to maintain primary QoS while allowing secondary access.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.academia.edu/8856871/Hybrid_Spectrum_Sharing_with_Cooperative_Secondary_User_Selection_in_Cognitive_Radio_Networks?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Conference Papers -->
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Developing a Vision-based Driving Assistance System</h3>
+                <p class="publication-authors">A. M. Shibli, M. M. Hoque, L. Alam</p>
+                <p class="publication-venue">IEMIS 2018, India</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  A vision-based driving assistance system that uses computer vision algorithms to detect obstacles, lane markings, and traffic signs for enhanced driver safety.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 15 citations
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/329605031_Developing_a_Vision-Based_Driving_Assistance_System_Proceedings_of_IEMIS_2018_Volume_1" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+             <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Word Sense Disambiguation of Bangla Sentences Using Statistical Approach</h3>
+                <p class="publication-authors">Saiba Nazah, M. M. Hoque, M. R. Hossain</p>
+                <p class="publication-venue">EICT 2017, IEEE, Bangladesh</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2017</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 Proposes a statistical approach using Naïve Bayes and Artificial Neural Networks for disambiguating Bangla words, achieving 82% accuracy.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 13 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://ieeexplore.ieee.org/document/8275157" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">An Intelligent Human–Robot Interaction Framework to Control the Human Attention</h3>
+                <p class="publication-authors">M. M. Hoque, K. Deb, D. Das, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">International Conference on Informatics, Electronics, and Vision (ICIEV)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a robotic attention-control framework in three phases: attract attention, make eye contact, then shift attention.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                  
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/261455788_An_intelligent_human-robot_interaction_framework_to_control_the_human_attention" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book Chapters -->
+             <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+             
+                <h3 class="publication-title">Vision-based Driver's Attention Monitoring System for Smart Vehicles</h3>
+                <p class="publication-authors">L. Alam, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Intelligent Systems & Computing, Springer (Vol. 866)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  <span>Pages: 196–209</span>
+                </div>
+                <p class="publication-abstract">
+                  This chapter presents a novel vision-based system for monitoring driver attention in smart vehicles using computer vision techniques to detect distraction and fatigue.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 12 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/327942674_Vision-Based_Driver%27s_Attention_Monitoring_System_for_Smart_Vehicles" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="250">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Automatic Bengali Document Categorization based on Deep Convolution Nets</h3>
+                <p class="publication-authors">M. R. Hossain, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Intelligent Systems & Computing (Vol. 882, In Press)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  <span>In Press</span>
+                </div>
+                <p class="publication-abstract">
+                  A deep learning approach for automatic categorization of Bengali documents using convolutional neural networks, achieving state-of-the-art performance in text classification.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 8 citations
+                  </div>
+                  <div class="publication-links">
+       
+                    <a href="https://www.researchgate.net/publication/332806361_Automatic_Bengali_Document_Categorization_Based_on_Deep_Convolution_Nets" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">An Empirical Framework to Control Human Attention by Robot</h3>
+                <p class="publication-authors">M. M. Hoque, T. Onuki, E. Tsuburaya, Y. Kobayashi, Y. Kuno, T. Sato, S. Kodama</p>
+                <p class="publication-venue">Lecture Notes in Computer Science (LNCS, Vol. 6468), Springer</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2011</span>
+                  <span>Pages: 430–439</span>
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a robotic attention model using head motion and blinking to attract human gaze, make eye contact, and shift focus to a target object.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 18 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/220744827_An_Empirical_Framework_to_Control_Human_Attention_by_Robot" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="300">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Effects of Robotic Blinking Behavior for Making Eye Contact with Humans</h3>
+                <p class="publication-authors">M. M. Hoque, Q. D. Hossain, K. Deb</p>
+                <p class="publication-venue">Advanced Computing, Networking and Informatics (Smart Innovation, Vol. 27, Springer)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2014</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  Investigation of how robotic blinking behavior affects the establishment of eye contact with humans, with implications for natural human-robot interaction.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 19 citations
+                  </div>
+                  <div class="publication-links">
+                    
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-07353-8_71" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- More publications would go here -->
+          </div>
+        </div>
+        
+        <!-- Journal Papers Tab -->
+        <div class="tab-content" id="journal-tab">
+          <div class="publications-container">
+            <!-- Journal Papers content -->
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">A Text-Based Chat System Embodied with an Expressive Agent</h3>
+                <p class="publication-authors">L. Alam, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Human-Computer Interaction</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2017</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                  This paper presents a text-based chat system enhanced with an expressive agent that improves user engagement through non-verbal cues and emotional expressions.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 24 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1155/2017/8962762" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="250">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">An Empirical Robotic Framework for Initiating Interaction with the Target Human in Multiparty Settings</h3>
+                <p class="publication-authors">M. M. Hoque et al.</p>
+                <p class="publication-venue">Journal of Circuits, Systems & Computers</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2015</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                  An empirical framework for robots to initiate interaction with specific humans in multiparty settings, using gaze and attention mechanisms for natural human-robot interaction.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 31 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126615400034" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="300">
+              <div class="publication-header">
+             
+                <h3 class="publication-title">Outage Capacity Analysis of a Cooperative Relaying Scheme in Interference Limited Cognitive Radio Networks</h3>
+                <p class="publication-authors">M. F. Kader, Assaduzzaman, M. M. Hoque</p>
+                <p class="publication-venue">Wireless Personal Communications, Springer</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2014</span>
+                </div>
+                <p class="publication-abstract">
+                  Analysis of outage capacity in cognitive radio networks using cooperative relaying schemes under interference-limited conditions, with performance evaluation.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 42 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://link.springer.com/article/10.1007/s11277-014-1976-8" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="350">
+              <div class="publication-header">
+             
+                <h3 class="publication-title">A Proactive Approach of Robotic Framework for Making Eye Contact with Humans</h3>
+                <p class="publication-authors"> M. M. Hoque, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">Advances in Human-Computer Interaction</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2014</span>
+                </div>
+                <p class="publication-abstract">
+                  Proposes a robotic framework for initiating eye contact with humans through attention capture and gaze awareness, enhancing human-robot interaction.
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 6 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1155/2014/694046" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="350">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Effect of Robot’s Gaze Behaviors for Attracting and Controlling Human Attention</h3>
+                <p class="publication-authors"> M. M. Hoque, T. Onuki, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">Journal of Advanced Robotics (Taylor & Francis, Japan)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                </div>
+                <p class="publication-abstract">
+                 Investigates how robot gaze behaviors—such as blinking and head movements—can attract and control human attention, enhancing human-robot interaction
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 64 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.tandfonline.com/doi/abs/10.1080/01691864.2013.791654" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Fundamental Frequency Extraction of Noisy Speech Signals</h3>
+                <p class="publication-authors">M. A. F. M. R. Hasan, R. Yasmin, D. Das, M. M. Hoque, M. I. Pramanik, M. S. Rahman</p>
+                <p class="publication-venue">Rajshahi University Journal of Science & Engineering, Vol. 43</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2015</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 This paper proposes a new correlation-based method using a center-clipped autocorrelation weighted by inverse YIN for robust pitch estimation in noisy speech.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 1 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/288992842_Fundamental_Frequency_Extraction_of_Noisy_Speech_Signals" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+            
+                <h3 class="publication-title">Hybrid Spectrum Sharing with Cooperative Secondary User Selection in Cognitive Radio Networks</h3>
+                <p class="publication-authors">M. F. Kader, Assaduzzaman, M. M. Hoque</p>
+                <p class="publication-venue">KSII Transactions on Internet and Information Systems (TIIS)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a hybrid cooperative spectrum sharing protocol combining interweave and underlay modes, with relay selection to maintain primary QoS while allowing secondary access.
+                </p>
+                <div class="publication-footer">
+              <div class="citation-count">
+                    
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.academia.edu/8856871/Hybrid_Spectrum_Sharing_with_Cooperative_Secondary_User_Selection_in_Cognitive_Radio_Networks?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">A Robotic Framework for Controlling Human’s Attention</h3>
+                <p class="publication-authors">M. M. Hoque</p>
+                <p class="publication-venue">Paladyn: Journal of Behavioral Robotics, Vol. 3, No. 2, pp. 92–101</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                  This paper presents a conceptual robotic attention model with phases of attraction, eye contact, avoidance, gaze back, and shift to steer human attention in varied viewing situations.
+                </p>
+                <div class="publication-footer">
+                 <div class="citation-count">
+                    
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://link.springer.com/article/10.2478/s13230-012-0099-8?utm_source=chatgpt.com" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">Design a Robotic Head to Attract Human Attention by Considering Viewing Situations</h3>
+                <p class="publication-authors">M. M. Hoque, Y. Kobayashi, Y. Kuno, K. Deb</p>
+                <p class="publication-venue">CSERJ (Computer Science & Engineering Research Journal), Bangladesh</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 This study designs a robotic head that adapts its gaze & orientation based on viewing angle to reliably attract human attention in different situations.
+                </p>
+                <div class="publication-footer">
+                  
+                 
+                </div>
+              </div>
+            </div>
+             <div class="publication-card" data-category="journal" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">An Efficient Framework for Network Intrusion Detection</h3>
+                <p class="publication-authors">M. M. Hoque, A. M. Mahbub</p>
+                <p class="publication-venue">Georgian Electronic Scientific Journal: Computer Science and Telecommunications</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2010</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 This paper proposes an intrusion detection framework using efficient methods to detect anomalous network behavior with lower overhead
+                </p>
+                <div class="publication-footer">
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more journal papers here -->
+          </div>
+        
+        <!-- Conference Papers Tab -->
+        <div class="tab-content" id="conference-tab">
+          <div class="publications-container">
+            <!-- Conference Papers content -->
+           <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Developing a Vision-based Driving Assistance System</h3>
+                <p class="publication-authors">A. M. Shibli, M. M. Hoque, L. Alam</p>
+                <p class="publication-venue">IEMIS 2018, India</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  A vision-based driving assistance system that uses computer vision algorithms to detect obstacles, lane markings, and traffic signs for enhanced driver safety.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 15 citations
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/329605031_Developing_a_Vision-Based_Driving_Assistance_System_Proceedings_of_IEMIS_2018_Volume_1" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+                
+                <h3 class="publication-title">Controlling Human Attention through Robot’s Gaze Behaviors</h3>
+                <p class="publication-authors"> M. M. Hoque, T. Onuki, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">HSI 2011</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2011</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 Proposes a robotic framework for initiating eye contact with humans through attention capture and gaze awareness, enhancing human-robot interaction
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 6 citations
+                  </div>
+                   <div class="publication-links">
+                  <a href="https://dl.acm.org/doi/10.1145/2157689.2157729?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+             <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Real-Time Distraction Detection Based on Driver’s Visual Features</h3>
+                <p class="publication-authors">L. Alam, M. M. Hoque</p>
+                <p class="publication-venue">ECCE 2019, Bangladesh</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2019</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                 Proposes a real-time driver distraction detection system analyzing facial features like eye and head movements to classify attention states.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 21 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://ieeexplore.ieee.org/document/8679191" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+             
+                <h3 class="publication-title">Word Sense Disambiguation of Bangla Sentences Using Statistical Approach</h3>
+                <p class="publication-authors">Saiba Nazah, M. M. Hoque, M. R. Hossain</p>
+                <p class="publication-venue">EICT 2017, IEEE, Bangladesh</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2017</span>
+                 
+                </div>
+                <p class="publication-abstract">
+                 Proposes a statistical approach using Naïve Bayes and Artificial Neural Networks for disambiguating Bangla words, achieving 82% accuracy.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 13 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://ieeexplore.ieee.org/document/8275157" class="publication-link" title="DOI"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Attention control system considering the target person's attention level</h3>
+                <p class="publication-authors">D. Das, M. M. Hoque, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">ACM/IEEE International Conference on Human Robot Interaction (HRI), Japan</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes an attention control system for social robots that monitors a person’s task focus and uses that to decide how to attract their attention toward the robot.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 8 citations
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://dl.acm.org/doi/abs/10.5555/2447556.2447592?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Vision-based Attention Control System for Socially Interactive Robots</h3>
+                <p class="publication-authors">D. Das, M. M. Hoque, T. Onuki, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">The 21st IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN), France</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  This work detects human attention level from visual cues (face/head) and controls attention by robot gaze/head actions in interactive scenarios.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/261350682_Vision-based_attention_control_system_for_socially_interactive_robots?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+            
+                <h3 class="publication-title">Model for Controlling a Target Human's Attention in Multi-Party Settings</h3>
+                <p class="publication-authors">M. M. Hoque, D. Das, T. Onuki, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">The 21st IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  This paper presents an attention-control model where a robot attracts a target’s attention, makes eye contact, shifts gaze, and avoids non-targets in multiparty settings
+                </p>
+                
+                <div class="publication-footer">
+                   <div class="citation-count">
+                   
+                  </div>
+                  
+                   <div class="publication-links">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-642-31576-3_68?utm_source=chatgpt.com" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+ <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+            
+                <h3 class="publication-title">An Intelligent Human–Robot Interaction Framework to Control the Human Attention</h3>
+                <p class="publication-authors">M. M. Hoque, K. Deb, D. Das, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">International Conference on Informatics, Electronics, and Vision (ICIEV)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a robotic attention-control framework in three phases: attract attention, make eye contact, then shift attention.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                  
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/261455788_An_intelligent_human-robot_interaction_framework_to_control_the_human_attention" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="400">
+              <div class="publication-header">
+           
+                <h3 class="publication-title">An Integrated Approach of Attention Control of Target Human by Nonverbal Behaviors of Robots in Different Viewing Situations</h3>
+                <p class="publication-authors">M. M. Hoque, D. Das, T. Onuki, Y. Kobayashi, Y. Kuno</p>
+                <p class="publication-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                 This paper introduces a 4-phase attention control model where a robot gains attention, makes eye contact, handles avoidance, and shifts human gaze via nonverbal cues.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/261353377_An_integrated_approach_of_attention_control_of_target_human_by_nonverbal_behaviors_of_robots_in_different_viewing_situations" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="publication-card" data-category="conference" data-aos="fade-up" data-aos-delay="250">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">An Empirical Robotic Framework for Interacting with Multiple Humans</h3>
+                <p class="publication-authors">M. M. Hoque, Q. D. Hossian, D. Das, Y. Kobayashi, Y. Kuno, K. Deb</p>
+                <p class="publication-venue">EICT 2013, Bangladesh</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2013</span>
+                
+                </div>
+                <p class="publication-abstract">
+                  This paper presents a robotic framework designed for natural interaction with multiple humans simultaneously, using multimodal cues for engagement management.
+                </p>
+                
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 28 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.worldscientific.com/doi/10.1142/S0218126615400034" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more conference papers here -->
+          </div>
+        </div>
+        
+        <!-- Book Chapters Tab -->
+        <div class="tab-content" id="book-tab">
+          <div class="publications-container">
+            <!-- Book Chapters content -->
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+               
+                <h3 class="publication-title">Vision-based Driver's Attention Monitoring System for Smart Vehicles</h3>
+                <p class="publication-authors">L. Alam, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Intelligent Systems & Computing, Springer (Vol. 866)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  <span>Pages: 196–209</span>
+                </div>
+                <p class="publication-abstract">
+                  This chapter presents a novel vision-based system for monitoring driver attention in smart vehicles using computer vision techniques to detect distraction and fatigue.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 12 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/327942674_Vision-Based_Driver%27s_Attention_Monitoring_System_for_Smart_Vehicles" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="250">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Automatic Bengali Document Categorization based on Deep Convolution Nets</h3>
+                <p class="publication-authors">M. R. Hossain, M. M. Hoque</p>
+                <p class="publication-venue">Advances in Intelligent Systems & Computing (Vol. 882, In Press)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  <span>In Press</span>
+                </div>
+                <p class="publication-abstract">
+                  A deep learning approach for automatic categorization of Bengali documents using convolutional neural networks, achieving state-of-the-art performance in text classification.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 8 citations
+                  </div>
+                  <div class="publication-links">
+                    
+                    <a href="https://www.researchgate.net/publication/332806361_Automatic_Bengali_Document_Categorization_Based_on_Deep_Convolution_Nets" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="300">
+              <div class="publication-header">
+           
+                <h3 class="publication-title">Effects of Robotic Blinking Behavior for Making Eye Contact with Humans</h3>
+                <p class="publication-authors">M. M. Hoque, Q. D. Hossain, K. Deb</p>
+                <p class="publication-venue">Advanced Computing, Networking and Informatics (Smart Innovation, Vol. 27, Springer)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2014</span>
+                  
+                </div>
+                <p class="publication-abstract">
+                  Investigation of how robotic blinking behavior affects the establishment of eye contact with humans, with implications for natural human-robot interaction.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 19 citations
+                  </div>
+                  <div class="publication-links">
+                    
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-07353-8_71" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+              
+                <h3 class="publication-title">Developing a Vision-based Driving Assistance System</h3>
+                <p class="publication-authors">A. M. Shibli, M. M. Hoque, L. Alam</p>
+                <p class="publication-venue">Advances in Intelligent Systems & Computing (Vol. 755)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2018</span>
+                  <span>Pages: 799–812</span>
+                </div>
+                <p class="publication-abstract">
+                  This chapter presents a vision-based system that monitors driver attention using facial and gaze cues, providing alerts to prevent distraction and fatigue.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                  <i class="bi bi-quote"></i> 6 citations
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/329605031_Developing_a_Vision-Based_Driving_Assistance_System_Proceedings_of_IEMIS_2018_Volume_1" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                  
+                </div>
+                  </div>
+                </div>
+                 <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+          
+                <h3 class="publication-title">Robotic System Controlling Target Human’s Attention</h3>
+                <p class="publication-authors">M. M. Hoque et al.</p>
+                <p class="publication-venue">Intelligent Computing Theories & Applications (LNAI, Springer)</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2012</span>
+                </div>
+                <p class="publication-abstract">
+                 This paper presents a robotic attention-control model that attracts a target, makes eye contact, and guides attention while avoiding non-targets.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 9 citations
+                  </div>
+                   <div class="publication-links">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-642-31576-3_68" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="publication-card" data-category="book" data-aos="fade-up" data-aos-delay="200">
+              <div class="publication-header">
+         
+                <h3 class="publication-title">An Empirical Framework to Control Human Attention by Robot</h3>
+                <p class="publication-authors">M. M. Hoque, T. Onuki, E. Tsuburaya, Y. Kobayashi, Y. Kuno, T. Sato, S. Kodama</p>
+                <p class="publication-venue">Lecture Notes in Computer Science (LNCS, Vol. 6468), Springer</p>
+              </div>
+              <div class="publication-body">
+                <div class="publication-meta">
+                  <span class="publication-year">2011</span>
+                  <span>Pages: 430–439</span>
+                </div>
+                <p class="publication-abstract">
+                  This paper proposes a robotic attention model using head motion and blinking to attract human gaze, make eye contact, and shift focus to a target object.
+                </p>
+                <div class="publication-footer">
+                  <div class="citation-count">
+                    <i class="bi bi-quote"></i> 18 citations
+                  </div>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/220744827_An_Empirical_Framework_to_Control_Human_Attention_by_Robot" class="publication-link" title="PDF"><i class="bi bi-file-pdf"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Add more book chapters here -->
+          
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+   <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
+      <p>Professor, Department of Computer Science & Engineering<br>
+         IEEE Student Branch Chair, CUET</p>
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+        <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+        <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="copyright mt-3">
+        <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
+      </div>
+
+      <div class="credits">
+        Designed & Developed by <a href="#">[CodeHex]</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Tab functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+      const publicationCount = document.getElementById('publication-count');
+      
+      // Publication counts for each tab
+      const publicationCounts = {
+        'all': document.querySelectorAll('.publication-card').length,
+        'journal': document.querySelectorAll('.publication-card[data-category="journal"]').length,
+        'conference': document.querySelectorAll('.publication-card[data-category="conference"]').length,
+        'book': document.querySelectorAll('.publication-card[data-category="book"]').length
+      };
+      
+      // Switch tabs
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Show the corresponding tab content
+          const tabId = this.getAttribute('data-tab') + '-tab';
+          document.getElementById(tabId).classList.add('active');
+          
+          // Update publication count
+          publicationCount.textContent = publicationCounts[this.getAttribute('data-tab')];
+        });
+      });
+      
+      // Initialize publication count
+      publicationCount.textContent = publicationCounts['all'];
+    });
+  </script>
+
+</body>
+
+</html>
