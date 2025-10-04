@@ -32,41 +32,10 @@
 
 <body class="about-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <!-- <h1 class="sitename">Personal</h1> -->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html"class="active">About</a></li>
-          <!-- <li><a href="resume.html">Resume</a></li> -->
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-               <li><a href="experience.html">Experience</a></li>
-               <li><a href="leadership.html">Leadership</a></li>
-            </ul>
-          </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#" ><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="research.html">Research</a></li>
-              <li><a href="publications.html">Publications</a></li>
-              <li><a href="awards.html">Awards</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
+ <!-- Where header will appear -->
+<div id="header">
+ <header class="html"></header></div>
+</div>
   <div>
 
 <br>
@@ -80,613 +49,297 @@
 
   <main class="main">
 
-    <!-- About Page Title Section -->
-<div class="page-title section bg-light py-5" data-aos="fade">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Content (Left) -->
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <h1 class="fw-bold mb-3">About</h1>
-        <p class="text-muted mb-0" style="line-height:1.7;">
-          Prof. Dr. Mohammed Moshiul Hoque, Professor of Computer Science and Engineering at CUET, Bangladesh, holds a Ph.D. from Saitama University, Japan. Research focuses on NLP, AI, Machine Learning, Computer Vision, and HCI, particularly for low-resource languages like Bengali.<br><br>
-          With over 200 publications and extensive citations, professional roles have included Dean of ECE, Head of CSE, and Director of the Sheikh Kamal IT Business Incubator. Committed to innovation and mentorship, the goal is to empower young researchers and advance Bangladesh’s technology ecosystem.
-        </p>
-      </div>
+    <!DOCTYPE html>
+<html lang="en">
 
-      <!-- Image (Right) -->
-      <div class="col-lg-5 text-center">
-        <img src="assets/img/about1.jpg" class="img-fluid shadow-lg" alt="Prof. Dr. Mohammed Moshiul Hoque">
-      </div>
-    </div>
-  </div>
-</div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Dr. Mohammed Moshiul Hoque</title>
+  <meta name="description" content="Professor of Computer Science and Engineering at CUET, specializing in NLP, AI, Machine Learning, Computer Vision, and HCI">
+  <meta name="keywords" content="AI, NLP, Machine Learning, Computer Vision, HCI, CUET, Bangladesh, Research">
 
-<!-- Inline CSS -->
-<style>
-header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 40px 20px;
-            background: linear-gradient(120deg, #1a2a3a, #2c5282);
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: visible;
-            border-left: 6px solid #4299e1;
-            border-right: 6px solid #4299e1;
-        }
-/* Default link color */
-#navmenu ul li a {
-  color: ffff;    
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-/* Hover effect */
-#navmenu ul li a:hover {
-  color: ffff;    
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-/* Active page */
-#navmenu ul li a.active {
-  color:  #ffff;   
-  font-weight: 500;
-}
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-
-
-.page-title {
-  background-color: #f8f9fa; /* Light background for professional look */
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.page-title h1 {
-  color: #010c34;
-  font-size: 48px;
-}
-.page-title p {
-  color: #555;
-  font-size: 16px;
-}
-.page-title img {
-  max-width: 100%;
-  height: auto;
-  /* Square shape, no border-radius */
-  border-radius: 0;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-.page-title img:hover {
-  transform: scale(1.03);
-}
-@media (max-width: 992px) {
-  .page-title h1 {
-    font-size: 36px;
-  }
-  .page-title img {
-    margin-top: 20px;
-  }
-}
-</style>
-
-<section id="about" class="about section bg-light py-5">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row align-items-center">
-      <!-- Profile Image (Square) -->
-      <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <img src="assets/img/aboutmmh..jpg" class="img-fluid profile-img shadow" alt="Profile Picture">
-      </div>
-
-      <!-- Profile Content -->
-      <div class="col-lg-8">
-        <h2 class="fw-bold mb-3">Prof. Dr. Mohammed Moshiul Hoque</h2>
-        <h5 class="text-muted mb-4">Professor of Computer Science & AI/NLP Researcher</h5>
-
-        <p class="profile-bio">
-          As a Professor of Computer Science and Engineering at CUET, Bangladesh, my research focuses on 
-          <strong>Natural Language Processing (NLP)</strong>, 
-          <strong>Artificial Intelligence (AI)</strong>, 
-          <strong>Machine Learning (ML)</strong>, 
-          <strong>Computer Vision</strong>, and 
-          <strong>Human-Computer Interaction (HCI)</strong>, 
-          with a particular emphasis on low-resource languages like Bengali.
-          Over the course of my career, more than <strong>200 publications</strong> have been authored, contributing significantly to the advancement of AI and NLP research on a global scale.
-        </p>
-
-        <!-- Info Grid -->
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <div class="info-item"><i class="bi bi-calendar-check"></i><strong> Birthday:</strong> <span>April 15, 1976</span></div>
-            <div class="info-item"><i class="bi bi-telephone"></i><strong> Phone:</strong> <span>+8801716-133019</span></div>
-            <div class="info-item"><i class="bi bi-geo-alt"></i><strong> Birthplace:</strong> <span>Comilla, Bangladesh</span></div>
-            <div class="info-item"><i class="bi bi-mortarboard"></i><strong> Position:</strong> <span>Professor, CUET</span></div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-item"><i class="bi bi-book"></i><strong> Education:</strong> <span>Ph.D. in Computer Science, Saitama University, Japan</span></div>
-            <div class="info-item"><i class="bi bi-building"></i><strong> Department:</strong> <span>Computer Science & Engineering</span></div>
-            <div class="info-item"><i class="bi bi-award"></i><strong> Leadership:</strong> <span>Dean of ECE, Head of CSE, Director of Sheikh Kamal IT Incubator</span></div>
-            <div class="info-item"><i class="bi bi-journal-text"></i><strong> Publications:</strong> <span>200+</span></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- Inline CSS -->
-<style>
-:root {
-  --base-font: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --heading-color: #000a2d;
-  --muted: #555;
-}
-
-/* PROFILE IMAGE - square */
-.profile-img {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 0;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  transition: transform 0.25s ease;
-}
-.profile-img:hover { transform: scale(1.02); }
-
-@media (max-width: 992px) {
-  .profile-img {
-    width: 100%;
-    height: auto;
-    max-height: 420px;
-  }
-}
-
-/* BIO PARAGRAPH - straight alignment */
-.profile-bio {
-  font-style: normal;             
-  font-family: var(--base-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #242424;
-  margin-bottom: 0;
-  text-align: justify;  /* straight alignment */
-  text-justify: inter-word;
-}
-
-/* Info items */
-.info-item {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #333;
-}
-.info-item i {
-  color: #1a7d48;
-  margin-right: 8px;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.info-item strong {
-  min-width: 140px;
-  font-weight: 600;
-  color: var(--heading-color);
-}
-.info-item span {
-  color: #444;
-}
-</style>
-
-
-
-<!-- Inline CSS -->
-<style>
-.about h2 {
-  color: #000a2d;
-}
-.about h5 {
-  color: #555;
-}
-.info-item {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #333;
-}
-.info-item i {
-  color: #ad6127;
-  margin-right: 8px;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.info-item strong {
-  min-width: 140px;
-  font-weight: 600;
-  color: #18334b;
-}
-.info-item span {
-  color: #444;
-}
-</style>
-
-   
-   
-   
-    
-<section id="stats" class="stats section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-journal-bookmark"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="220" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Research Publications</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-people"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Students Supervised</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-globe"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-          <p>International Collaborations</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-lightbulb"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Research Projects</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-    </div><!-- End Row -->
-
-  </div><!-- End Container -->
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   
+</head>
 
-</section><!-- /Stats Section -->
+<body class="about-page">
 
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <!-- <h1 class="sitename">Personal</h1> -->
+      </a>
 
-
-
-
-
-
-<!-- Research Projects Section -->
-<section id="projects" class="projects section bg-light py-5">
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2 class="fw-bold mb-2">Research Projects</h2>
-    <p class="text-muted mb-5">Key projects reflecting research in AI, NLP, and HCI</p>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4">
-      <!-- Project 1 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="project-card p-4 shadow-sm rounded-4 h-100">
-          <div class="icon mb-3">
-            <i class="bi bi-code-slash" style="color:#09654a; font-size: 28px;"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Bangla NLP Tools</h5>
-          <p class="text-muted mb-0">
-            Developing Natural Language Processing tools for Bangla, including text classification and sentiment analysis.
-          </p>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="project-card p-4 shadow-sm rounded-4 h-100">
-          <div class="icon mb-3">
-            <i class="bi bi-mic" style="color:#ad1c5b; font-size: 28px;"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Speech Recognition Systems</h5>
-          <p class="text-muted mb-0">
-            Building speech-enabled assistive systems for low-resource languages like Bengali.
-          </p>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="project-card p-4 shadow-sm rounded-4 h-100">
-          <div class="icon mb-3">
-            <i class="bi bi-robot" style="color:#072a46; font-size: 28px;"></i>
-          </div>
-          <h5 class="fw-bold mb-2">Human-Robot Interaction</h5>
-          <p class="text-muted mb-0">
-            Researching multi-party interaction frameworks for robots in real-world environments.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Inline CSS -->
-<style>
-.projects .project-card {
-  background: #d5dbe5;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.projects .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-.projects .project-card h5 {
-  color: #020a25;
-}
-.projects .project-card p {
-  color: #555;
-}
-.projects .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background: rgba(0,0,0,0.03);
-  border-radius: 50%;
-}
-.section-title h2 {
-  color: #1a1e2d;
-}
-.section-title p {
-  font-size: 16px;
-}
-</style>
-
-
-
-<!-- Publications Section -->
-<section id="publications" class="publications section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Publications</h2>
-    <div><span>Selected</span> <span>Papers</span></div>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-4">
-
-      <div class="col-lg-6 col-md-6">
-        <div class="card publication-card h-100">
-          <div class="card-body">
-            <i class="bi bi-journal-text" style="font-size: 24px; color: #5578ff;"></i>
-            <h5 class="card-title mt-2">Model for Controlling a Target Human's Attention in Multi-Party Settings (HRI)</h5>
-            <p class="card-text">A study on human-robot interaction, exploring attention control in multi-party scenarios.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6">
-        <div class="card publication-card h-100">
-          <div class="card-body">
-            <i class="bi bi-journal-text" style="font-size: 24px; color: #e80368;"></i>
-            <h5 class="card-title mt-2">Vision-based Driving Assistance System (Best Paper, IEMIS 2018)</h5>
-            <p class="card-text">Innovative vision-based system to enhance driver safety and assistance features.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6">
-        <div class="card publication-card h-100">
-          <div class="card-body">
-            <i class="bi bi-journal-text" style="font-size: 24px; color: #ffbb2c;"></i>
-            <h5 class="card-title mt-2">Bengali Document Categorization using Deep CNNs</h5>
-            <p class="card-text">Applying deep convolutional neural networks to categorize Bangla documents efficiently.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6">
-        <div class="card publication-card h-100">
-          <div class="card-body">
-            <i class="bi bi-journal-text" style="font-size: 24px; color: #29cc61;"></i>
-            <h5 class="card-title mt-2">Fake News Detection and Multimodal Sentiment Analysis (2024–2025)</h5>
-            <p class="card-text">Recent research on detecting fake news and analyzing sentiment using multimodal data.</p>
-          </div>
-        </div>
-      </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="experience.html">Experience</a></li>
+               <li><a href="leadership.html">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- Extra CSS -->
-<style>
-  .publication-card {
-    border: 5px solid #02012c;
-    border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
+  <main class="main">
 
-  .publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right">
+            <h1 class="hero-title">About Dr. Mohammed Moshiul Hoque</h1>
+            <p class="hero-subtitle">
+              Professor of Computer Science and Engineering at CUET, Bangladesh, with a Ph.D. from Saitama University, Japan. Research focuses on NLP, AI, Machine Learning, Computer Vision, and HCI, particularly for low-resource languages like Bengali.
+            </p>
+            <p class="hero-subtitle">
+              With over 200 publications and extensive citations, professional roles have included Dean of ECE, Head of CSE, and Director of the Sheikh Kamal IT Business Incubator.
+            </p>
+          </div>
+          <div class="col-lg-5 text-center" data-aos="fade-left">
+            <div class="profile-image-container">
+              <img src="assets/img/about1.jpg" class="profile-image" alt="Prof. Dr. Mohammed Moshiul Hoque">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  .publication-card i {
-    display: inline-block;
-  }
-
-  .publication-card .card-title {
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .publication-card .card-text {
-    font-size: 14px;
-    color: #3c3535;
-  }
-</style>
-
-
-
-
-
-
-
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="profile-card">
+              <h2 class="profile-name">Prof. Dr. Mohammed Moshiul Hoque</h2>
+              <h5 class="profile-title">Professor of Computer Science & AI/NLP Researcher</h5>
+              
+              <p class="profile-bio">
+                As a Professor of Computer Science and Engineering at CUET, Bangladesh, my research focuses on 
+                <strong>Natural Language Processing (NLP)</strong>, 
+                <strong>Artificial Intelligence (AI)</strong>, 
+                <strong>Machine Learning (ML)</strong>, 
+                <strong>Computer Vision</strong>, and 
+                <strong>Human-Computer Interaction (HCI)</strong>, 
+                with a particular emphasis on low-resource languages like Bengali.
+                Over the course of my career, more than <strong>200 publications</strong> have been authored, contributing significantly to the advancement of AI and NLP research on a global scale.
+              </p>
+              
+              <div class="info-grid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="info-item">
+                      <i class="bi bi-calendar-check"></i>
+                      <div>
+                        <strong>Birthday:</strong>
+                        <span>April 15, 1976</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-telephone"></i>
+                      <div>
+                        <strong>Phone:</strong>
+                        <span>+8801716-133019</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-geo-alt"></i>
+                      <div>
+                        <strong>Birthplace:</strong>
+                        <span>Comilla, Bangladesh</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <strong>Position:</strong>
+                        <span>Professor, CUET</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info-item">
+                      <i class="bi bi-book"></i>
+                      <div>
+                        <strong>Education:</strong>
+                        <span>Ph.D. in Computer Science, Saitama University, Japan</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-building"></i>
+                      <div>
+                        <strong>Department:</strong>
+                        <span>Computer Science & Engineering</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-award"></i>
+                      <div>
+                        <strong>Leadership:</strong>
+                        <span>Dean of ECE, Head of CSE, Director of Sheikh Kamal IT Incubator</span>
+                      </div>
+                    </div>
+                    <div class="info-item">
+                      <i class="bi bi-journal-text"></i>
+                      <div>
+                        <strong>Publications:</strong>
+                        <span>200+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
 
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <div><span>Check my</span> <span class="description-title">Testimonials</span></div>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper" data-speed="600" data-delay="5000">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" "="">
-            <p>
-              <i class=" bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div> -->
-            <!-- </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div> -->
-            <!-- </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Research Projects</h2>
+          <!-- <p class="section-subtitle">Key projects reflecting research in AI, NLP, and HCI</p> -->
         </div>
 
-      </div> -->
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h5 class="project-title">Bangla NLP Tools</h5>
+              <p class="project-description">
+                Developing Natural Language Processing tools for Bangla, including text classification and sentiment analysis.
+              </p>
+            </div>
+          </div>
 
-    <!-- </section> -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="bi bi-mic"></i>
+              </div>
+              <h5 class="project-title">Speech Recognition Systems</h5>
+              <p class="project-description">
+                Building speech-enabled assistive systems for low-resource languages like Bengali.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <h5 class="project-title">Human-Robot Interaction</h5>
+              <p class="project-description">
+                Researching multi-party interaction frameworks for robots in real-world environments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Publications</h2>
+          <!-- <p class="section-subtitle">Selected Research Papers</p> -->
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="publication-card">
+              <div class="publication-icon">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h5 class="publication-title">Model for Controlling a Target Human's Attention in Multi-Party Settings (HRI)</h5>
+              <p class="publication-description">A study on human-robot interaction, exploring attention control in multi-party scenarios.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="publication-card">
+              <div class="publication-icon">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h5 class="publication-title">Vision-based Driving Assistance System (Best Paper, IEMIS 2018)</h5>
+              <p class="publication-description">Innovative vision-based system to enhance driver safety and assistance features.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="publication-card">
+              <div class="publication-icon">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h5 class="publication-title">Bengali Document Categorization using Deep CNNs</h5>
+              <p class="publication-description">Applying deep convolutional neural networks to categorize Bangla documents efficiently.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="publication-card">
+              <div class="publication-icon">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h5 class="publication-title">Fake News Detection and Multimodal Sentiment Analysis (2024–2025)</h5>
+              <p class="publication-description">Recent research on detecting fake news and analyzing sentiment using multimodal data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
-
-  
-
-  <footer id="footer" class="footer dark-background">
-  <div class="container text-center">
-    <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
-    <p>Professor, Department of Computer Science & Engineering<br>
-       IEEE Student Branch Chair, CUET</p>
-       <div class="social-links d-flex justify-content-center">
-      <div class="social-links d-flex justify-content-center"></div>    
-      <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-
-          <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
-          <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
-          <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <div class="copyright mt-3">
-      <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
-    </div>
-
-    <div class="credits">
-      Designed & Developed by <a href="#">[CodeHex]</a>
-    </div>
-  </div>
-</footer>
+<!-- Where footer will appear -->
+<div id="footer"></div>
+ <footer class="html"></footer></div>
+</div>
 
 
   <!-- Scroll Top -->

@@ -33,18 +33,31 @@
 
 <body class="index-page">
 
+  <!-- Where header will appear -->
+<div id="header">
+ <header class="html"></header></div>
+</div>
+
+  <main class="main">
+
+   
+
+</head>
+
+<body class="home-page">
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Prof. Dr. M. M. Hoque</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html"class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                <li><a href="experience.html">Experience</a></li>
@@ -52,7 +65,7 @@
             </ul>
           </li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#" ><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Achievements</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="research.html">Research</a></li>
               <li><a href="publications.html">Publications</a></li>
@@ -70,419 +83,285 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/Untitled-1.jpg" alt="" data-aos="fade-in">
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Prof. Dr. Mohammed Moshiul Hoque </h2>
-        <p> <span class="typed" data-typed-items="Professor of CSE, CUET | Chair, IEEE Bangladesh | AI & Machine Learning through research"></span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <div class="social-links">
-          
-          <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-          <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
-          <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
-          <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <div class="hero-content">
+              <h1 class="hero-title">Prof. Dr. Mohammed Moshiul Hoque</h1>
+              <p class="hero-subtitle">Professor of CSE, CUET | Chair, IEEE Bangladesh</p>
+              <p class="hero-description">
+                Leading scholar in AI, Machine Learning, and NLP with over 220 publications. 
+                Founder of CUET NLP Lab and Director of Sheikh Kamal IT Business Incubator.
+              </p>
+              <div class="social-links">
+                <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
+                <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
+                <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="hero-image">
+              <img src="assets/img/Untitled-1.jpg" class="profile-image" alt="Prof. Dr. Mohammed Moshiul Hoque">
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- Stats Section -->
+    <!--  -->
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="about-image">
+              <img src="assets/img/mmhhome.jpg" alt="Prof. Dr. Mohammed Moshiul Hoque" class="img-fluid rounded">
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-left">
+            <div class="about-content">
+              <h2>Academic & Research Journey</h2>
+              <p>
+                Prof. Dr. Mohammed Moshiul Hoque is a leading scholar in <strong>AI, Machine Learning, and NLP</strong>, and founder of the <strong>CUET NLP Lab</strong>. 
+                He has over <strong>220 publications</strong> in journals and conferences, with key works in <strong>HRI, speech & image processing, and Bengali language technology</strong>.
+              </p>
+              <p>
+                Beyond research, he leads the <strong>Sheikh Kamal IT Business Incubator (SKIBI)</strong>, organizes <strong>AI/ML/NLP workshops</strong>, and conducts <strong>youth ICT skill development training</strong>, contributing significantly to innovation and professional development in Bangladesh's technology sector.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Research Expertise</h2>
+          <!-- <p class="section-subtitle">Key Areas of Specialization</p> -->
+        </div>
+
+        <div class="skills-badges" data-aos="fade-up" data-aos-delay="100">
+          <span class="skill-badge">Natural Language Processing (NLP)</span>
+          <span class="skill-badge">Artificial Intelligence (AI)</span>
+          <span class="skill-badge">Machine Learning (ML)</span>
+          <span class="skill-badge">Human-Robot Interaction (HRI)</span>
+          <span class="skill-badge">Human-Computer Interaction (HCI)</span>
+          <span class="skill-badge">Speech Processing</span>
+          <span class="skill-badge">Image Processing</span>
+          <span class="skill-badge">ICT for Development (ICT4D)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Career Highlights</h2>
+          <!-- <p class="section-subtitle">Academic excellence and administrative leadership</p> -->
+        </div>
+
+        <div class="row g-4">
+          <!-- PhD -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h5>Ph.D. in Science & Engineering</h5>
+              <p class="institution">Saitama University, Japan</p>
+              <small class="detail">Human-Robot Interaction</small>
+            </div>
+          </div>
+
+          <!-- MSc -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h5>M.Sc. in Computer Science</h5>
+              <p class="institution">BUET, Bangladesh</p>
+              <small class="detail">Bangla Natural Language Processing</small>
+            </div>
+          </div>
+
+          <!-- BSc -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <h5>B.Sc. in EEE</h5>
+              <p class="institution">CUET, Bangladesh</p>
+              <small class="detail">Power System Design</small>
+            </div>
+          </div>
+
+          <!-- Director -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <h5>Director of Student Welfare</h5>
+              <p class="institution">CUET (2016–Present)</p>
+              <small class="detail">Student development & welfare</small>
+            </div>
+          </div>
+
+          <!-- Head of CSE -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h5>Head, Dept. of CSE</h5>
+              <p class="institution">CUET (2015–2017)</p>
+              <small class="detail">Academic leadership</small>
+            </div>
+          </div>
+
+          <!-- Provost -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <h5>Provost, Bangabandhu Hall</h5>
+              <p class="institution">CUET (2014–2016)</p>
+              <small class="detail">Student housing & administration</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Featured Publications</h2>
+          <!-- <p class="section-subtitle">Selected impactful research papers</p> -->
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="publication-card">
+              <h5 class="publication-title">
+                Effect of Robot's Gaze Behaviors for Attracting and Controlling Human Attention
+                <a href="https://www.tandfonline.com/doi/abs/10.1080/01691864.2013.791654" target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+              </h5>
+              <p class="publication-description">Advanced Robotics, Taylor & Francis (2013) — 64 citations</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="publication-card">
+              <h5 class="publication-title">
+                Outage Capacity Analysis of a Cooperative Relaying Scheme in Cognitive Radio Networks
+                <a href="https://link.springer.com/article/10.1007/s11277-014-1976-8" target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+              </h5>
+              <p class="publication-description">Wireless Personal Communications, Springer (2014) — 42 citations</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="publication-card">
+              <h5 class="publication-title">
+                An Empirical Robotic Framework for Initiating Interaction with the Target Human in Multiparty Settings
+                <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126615400034" target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+              </h5>
+              <p class="publication-description">Journal of Circuits, Systems & Computers (2015) — 31 citations</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="publication-card">
+              <h5 class="publication-title">
+                Recent Advances in Bengali NLP and AI Research
+                <a href="#" target="_blank">
+                  <i class="bi bi-link-45deg"></i>
+                </a>
+              </h5>
+              <p class="publication-description">Ongoing research in low-resource language technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Leadership</h2>
+          <!-- <p class="section-subtitle">Key leadership roles and professional recognitions</p> -->
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="leadership-card">
+              <div class="leadership-icon">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <h4>Chair, IEEE Bangladesh Section</h4>
+              <p class="year">2021</p>
+              <span class="highlight">Led the national IEEE section, fostering innovation & collaboration</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="leadership-card">
+              <div class="leadership-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h4>Fellow, Institution of Engineers Bangladesh (IEB)</h4>
+              <span class="highlight">Highest membership grade awarded for distinguished contributions</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="leadership-card">
+              <div class="leadership-icon">
+                <i class="bi bi-star"></i>
+              </div>
+              <h4>Senior Member, IEEE (USA)</h4>
+              <span class="highlight">Recognized internationally for professional excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-
- 
-    <section id="contact" class="contact section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row align-items-center">
-
-      <!-- Left Side Image -->
-      <div class="col-lg-4 col-md-5">
-        <img src="assets/img/mmhhome.jpg" alt="Prof. Dr. Mohammed Moshiul Hoque" class="img-fluid rounded">
-      </div>
-
-      <!-- Right Side Text -->
-      <div class="col-lg-8 col-md-7">
-        <h3 class="sitename">Academic & Research Journey</h3>
-        <p>
-          Prof. Dr. Mohammed Moshiul Hoque is a leading scholar in <strong>AI, Machine Learning, and NLP</strong>, and founder of the <strong>CUET NLP Lab</strong>. 
-          He has over <strong>220 publications</strong> in journals and conferences, with key works in <strong>HRI, speech & image processing, and Bengali language technology</strong>. 
-          Beyond research, he leads the <strong>Sheikh Kamal IT Business Incubator (SKIBI)</strong>, organizes <strong>AI/ML/NLP workshops</strong>, and conducts <strong>youth ICT skill development training</strong>, contributing significantly to innovation and professional development in Bangladesh’s technology sector.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!-- Skills / Research Expertise Section -->
-<section id="skills" class="skills section">
-
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Research Expertise</h2>
-    <div><span>Key</span> <span class="description-title">Areas</span></div>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="skills-badges">
-      <span class="badge">Natural Language Processing (NLP)</span>
-      <span class="badge">Artificial Intelligence (AI)</span>
-      <span class="badge">Machine Learning (ML)</span>
-      <span class="badge">Human-Robot Interaction (HRI)</span>
-      <span class="badge">Human-Computer Interaction (HCI)</span>
-      <span class="badge">Speech Processing</span>
-      <span class="badge">Image Processing</span>
-      <span class="badge">ICT for Development (ICT4D)</span>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- Extra CSS for badges -->
-<style>
-  .skills-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .skills-badges .badge {
-    background: #0a2c48;
-    color: #f8f4f4;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-</style>
-
-<!-- Academic & Administrative Highlights -->
-<section id="highlights" class="section py-5">
-  <div class="container" data-aos="fade-up">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Career Highlights </h2>
-      <p class="subtitle">Academic excellence and administrative leadership</p>
-    </div>
-
-    <div class="row g-4">
-      
-      <!-- PhD -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-graduation-cap icon"></i>
-          <h5>Ph.D. in Science & Engineering</h5>
-          <p class="institution">Saitama University, Japan</p>
-          <small class="detail">Human-Robot Interaction</small>
-        </div>
-      </div>
-
-      <!-- MSc -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-university icon"></i>
-          <h5>M.Sc. in Computer Science</h5>
-          <p class="institution">BUET, Bangladesh</p>
-          <small class="detail">Bangla Natural Language Processing</small>
-        </div>
-      </div>
-
-      <!-- BSc -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-book icon"></i>
-          <h5>B.Sc. in EEE</h5>
-          <p class="institution">CUET, Bangladesh</p>
-          <small class="detail">Power System Design</small>
-        </div>
-      </div>
-
-      <!-- Director -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-user-tie icon"></i>
-          <h5>Director of Student Welfare</h5>
-          <p class="institution">CUET (2016–Present)</p>
-          <small class="detail">Student development & welfare</small>
-        </div>
-      </div>
-
-      <!-- Head of CSE -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-users icon"></i>
-          <h5>Head, Dept. of CSE</h5>
-          <p class="institution">CUET (2015–2017)</p>
-          <small class="detail">Academic leadership</small>
-        </div>
-      </div>
-
-      <!-- Provost -->
-      <div class="col-lg-4 col-md-6">
-        <div class="highlight-card text-center">
-          <i class="fa fa-building icon"></i>
-          <h5>Provost, Bangabandhu Hall</h5>
-          <p class="institution">CUET (2014–2016)</p>
-          <small class="detail">Student housing & administration</small>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CSS -->
-<style>
-  .highlight-card {
-    background: #0c1836; /* Theme dark */
-    color: #fff;
-    padding: 25px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(169, 27, 27, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .highlight-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(189, 44, 44, 0.25);
-  }
-  .highlight-card .icon {
-    font-size: 2rem;
-    color: var(--accent-color, #ffcc00);
-    margin-bottom: 12px;
-    display: block;
-  }
-  .highlight-card h5 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #fff;
-  }
-  .highlight-card .institution {
-    font-size: 0.9rem;
-    margin: 0;
-    color: #e0e0e0;
-  }
-  .highlight-card .detail {
-    font-size: 0.85rem;
-    color: #2dd4f2;
-    display: block;
-    margin-top: 6px;
-  }
-</style>
-
-
-
-
-<!-- Featured Publications Section -->
-<section id="featured-publications" class="section bg-light">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Featured Publications</h2>
-    <p>Selected impactful research papers</p>
-  </div>
-
-  <div class="container">
-    <ul class="featured-pub-list">
-      <li data-aos="fade-up" data-aos-delay="100">
-        <h4>
-          Effect of Robot’s Gaze Behaviors for Attracting and Controlling Human Attention
-          <a href="https://www.tandfonline.com/doi/abs/10.1080/01691864.2013.791654" target="_blank">
-            <i class="bi bi-link-45deg"></i>
-          </a>
-        </h4>
-        <p>Advanced Robotics, Taylor & Francis (2013) — 64 citations</p>
-      </li>
-
-      <li data-aos="fade-up" data-aos-delay="200">
-        <h4>
-          Outage Capacity Analysis of a Cooperative Relaying Scheme in Cognitive Radio Networks
-          <a href="https://link.springer.com/article/10.1007/s11277-014-1976-8" target="_blank">
-            <i class="bi bi-link-45deg"></i>
-          </a>
-        </h4>
-        <p>Wireless Personal Communications, Springer (2014) — 42 citations</p>
-      </li>
-
-      <li data-aos="fade-up" data-aos-delay="300">
-        <h4>
-          An Empirical Robotic Framework for Initiating Interaction with the Target Human in Multiparty Settings
-          <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126615400034" target="_blank">
-            <i class="bi bi-link-45deg"></i>
-          </a>
-        </h4>
-        <p>Journal of Circuits, Systems & Computers (2015) — 31 citations</p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- CSS Styling -->
-<style>
-  .featured-pub-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .featured-pub-list li {
-    background: #6a7c81; /* card background */
-    border-left: 4px solid var(--accent-color); /* theme accent color */
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(22, 22, 22, 0.05);
-    transition: transform 0.2s ease;
-  }
-
-  .featured-pub-list li:hover {
-    transform: translateY(-3px);
-  }
-
-  .featured-pub-list h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--heading-color);
-    margin: 0 0 5px;
-    display: flex;
-    align-items: center;
-  }
-
-  .featured-pub-list h4 a {
-    margin-left: 8px;
-    color: var(--accent-color);
-    font-size: 1.2rem;
-  }
-
-  .featured-pub-list p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-  }
-</style>
-
-
-<!-- Leadership Highlights Section -->
-<section id="leadership" class="leadership section">
-  <div class="container" data-aos="fade-up">
-    <h2 class="section-title">Leadership Highlights</h2>
-    <p class="subtitle">Key leadership roles and professional recognitions</p>
-
-    <div class="leadership-container">
-      
-      <!-- Highlight 1 -->
-      <div class="leadership-card">
-        <i class="fas fa-user-tie"></i>
-        <h4>Chair, IEEE Bangladesh Section</h4>
-        <p class="year">2021</p>
-        <span class="highlight">Led the national IEEE section, fostering innovation & collaboration</span>
-      </div>
-
-      <!-- Highlight 2 -->
-      <div class="leadership-card">
-        <i class="fas fa-award"></i>
-        <h4>Fellow, Institution of Engineers Bangladesh (IEB)</h4>
-        <span class="highlight">Highest membership grade awarded for distinguished contributions</span>
-      </div>
-
-      <!-- Highlight 3 -->
-      <div class="leadership-card">
-        <i class="fas fa-graduation-cap"></i>
-        <h4>Senior Member, IEEE (USA)</h4>
-        <span class="highlight">Recognized internationally for professional excellence</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CSS -->
-<style>
-  .leadership-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  .leadership-card {
-    background: #4a6175; /* theme dark bg */
-    color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .leadership-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  }
-  .leadership-card i {
-    font-size: 2rem;
-    color: var(--accent-color, #ffcc00);
-    margin-bottom: 10px;
-    display: block;
-  }
-  .leadership-card h4 {
-    margin: 0 0 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #93999d;
-  }
-  .leadership-card .year {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #e0e0e0;
-    margin-bottom: 8px;
-  }
-  .leadership-card .highlight {
-    font-size: 0.9rem;
-    color: #ffffff;
-    display: block;
-  }
-</style>
-
-
-
-
-
-
-
-
+  
   
 
-  <footer id="footer" class="footer dark-background">
-  <div class="container text-center">
-    <h3 class="sitename">Prof. Dr. Mohammed Moshiul Hoque</h3>
-    <p>Professor, Department of Computer Science & Engineering<br>
-       IEEE Student Branch Chair, CUET</p>
-    
-       
-    <div class="social-links d-flex justify-content-center">
-      <div class="social-links d-flex justify-content-center"></div>    
 
 
-          
-          <a href="mailto:mmoshiulh@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-          <a href="https://www.facebook.com/mohammed.m.hoque.92/"><i class="bi bi-facebook"></i></a>
-          <a href="https://ieee.org"><i class="bi bi-globe"></i></a>
-          <a href="https://www.linkedin.com/in/sir-profile"><i class="bi bi-linkedin"></i></a>
-        </div>
+<!-- Where footer will appear -->
+<div id="footer"></div>
+ <footer class="html"></footer></div>
+</div>
 
 
-    <div class="copyright mt-3">
-      <span>© 2025</span> <strong class="px-1">Prof. Dr. Mohammed Moshiul Hoque</strong> <span>Knowledge • Research • Excellence</span>
-    </div>
 
-    <div class="credits">
-      Designed & Developed by <a href="#">[CodeHex]</a>
-    </div>
-  </div>
-</footer>
+
 
 
   <!-- Scroll Top -->
