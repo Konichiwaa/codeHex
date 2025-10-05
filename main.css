@@ -1,4 +1,5 @@
-:root {
+
+    :root {
       --primary-blue: #1a365d;
       --secondary-blue: #2c5282;
       --accent-blue: #3182ce;
@@ -519,6 +520,16 @@
         justify-content: center;
       }
     }
+  
+
+
+
+
+    /* about css */
+
+
+    
+
 
 
     :root {
@@ -938,3 +949,5 @@
         font-size: 2rem;
       }
     }
+
+  
